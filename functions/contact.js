@@ -7,9 +7,9 @@ function sendEmail(client, body, senderEmail, senderName) {
         email: senderEmail,
         name: senderName
       },
-      subject: `New website message from ${body.name}`,
-      to: 'shaneearley.dev@gmail.com',
-      html: `Hey, you\'ve a new message from ${body.name} at ${body.email}<br/>Message: ${body.msg}`
+      subject: `Hello from ${senderName}: New message available!`,
+      to: senderEmail,
+      html: `Hey Shane, you\'ve a new message from <b>${body.name}</b> at <b>${body.email}</b><br/><b>Message</b>: ${body.msg}<br>Thanks,<br>${senderName}`
     }
 
     client

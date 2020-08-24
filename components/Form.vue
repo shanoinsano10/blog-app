@@ -76,9 +76,11 @@ export default {
         this.$emit('close')
         this.sending = false
         this.resetForm()
+        this.success()
         console.log('Form sending success!')
       } catch (err) {
-        this.sendError = 'There was an error sending your message! Check your internet connection and try again.'
+        this.sendError =
+          'There was an error sending your message! Check your internet connection and try again.'
         this.sending = false
         console.log('Form sending error!', err)
       }
@@ -90,6 +92,12 @@ export default {
       this.msg = ''
       requestAnimationFrame(() => {
         this.$refs.observer.reset()
+      })
+    },
+    success() {
+      this.$buefy.toast.open({
+        message: 'Your message is on the way!',
+        type: 'is-success',
       })
     },
   },

@@ -13,8 +13,17 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxtjs/axios": "^5.12.1",
+    "@sendgrid/mail": "^7.2.4",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "nodemailer": "^6.4.11",
     "nuxt": "^2.14.0",
-    "nuxt-buefy": "^0.3.31"
+    "nuxt-buefy": "^0.3.31",
+    "sass-loader": "^9.0.3",
+    "validator": "^13.1.1",
+    "vee-validate": "^3.3.9",
+    "xss-filters": "^1.2.7"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

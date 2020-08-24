@@ -44,8 +44,7 @@
 
 <script>
 export default {
-  name: 'WorkPage',
+  name: 'AboutPage',
   components: {},
 }
 </script>
-

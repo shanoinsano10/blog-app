@@ -104,12 +104,12 @@
                       class="button is-blue-jeans is-medium footer-button"
                       @click="cardModal()"
                     >Send a message</button>
-                    <button
+                    <a
                       class="button is-sapphire-blue is-medium footer-button"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="/Shane_Earley_Resume_August_2020.pdf"
-                    >View my resume</button>
+                    >View my resume</a>
                   </div>
                 </div>
               </div>

@@ -28,11 +28,17 @@
           label="Message"
           v-model="msg"
         />
+        <b-message
+          v-if="sendError"
+          title="Error"
+          type="is-danger"
+          aria-close-label="Close message"
+        >{{ sendError }}</b-message>
       </section>
       <footer class="modal-card-foot has-text-right">
         <div class="has-text-right">
           <button class="button" type="button" @click="$emit('close')">Close</button>
-          <button class="button is-blue-jeans" @click="handleSubmit(submit)">
+          <button class="button is-blue-jeans" @click="handleSubmit(submit)" :disabled="sending">
             <span>Submit</span>
           </button>
         </div>
@@ -52,6 +58,8 @@ export default {
     BInputWithValidation,
   },
   data: () => ({
+    sending: false,
+    sendError: '',
     name: '',
     email: '',
     msg: '',
@@ -59,14 +67,20 @@ export default {
   methods: {
     async submit() {
       try {
-        await this.$axios.$post('/.netlify/functions/sendgrid', {
+        this.sending = true
+        await this.$axios.$post('/.netlify/functions/contact', {
           name: this.name,
           email: this.email,
           msg: this.msg,
         })
-        console.log(this.name, this.email, this.msg, 'Form submitted!')
+        this.$emit('close')
+        this.sending = false
+        this.resetForm()
+        console.log('Form sending success!')
       } catch (err) {
-        console.log(err, 'Form request error!')
+        this.sendError = 'There was an error sending your message! Check your internet connection and try again.'
+        this.sending = false
+        console.log('Form sending error!', err)
       }
     },
     resetForm() {

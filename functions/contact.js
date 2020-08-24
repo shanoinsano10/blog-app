@@ -1,4 +1,4 @@
-import * as client from "@sendgrid/mail"
+const client = require("@sendgrid/mail")
 
 function sendEmail(client, body, senderEmail, senderName) {
   return new Promise((fulfill, reject) => {

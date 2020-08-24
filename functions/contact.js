@@ -1,6 +1,6 @@
-const client = require("@sendgrid/mail")
+import * as client from "@sendgrid/mail"
 
-function sendEmail(client, body, senderEmail, senderName) {
+const sendEmail = (client, body, senderEmail, senderName) => {
   return new Promise((fulfill, reject) => {
     const data = {
       from: {
@@ -21,7 +21,7 @@ function sendEmail(client, body, senderEmail, senderName) {
   })
 }
 
-exports.handler = function(event, context, callback) {
+exports.handler = (event, context, callback) => {
   const {
     SENDGRID_API_KEY,
     SENDGRID_SENDER_EMAIL,

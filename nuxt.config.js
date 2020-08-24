@@ -55,7 +55,7 @@ export default {
     '@nuxtjs/axios',
   ],
   axios: {
-    // proxyHeaders: false
+    baseURL: '/',
   },
   css: [
     '@/assets/scss/main.scss'

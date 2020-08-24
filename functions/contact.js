@@ -1,6 +1,6 @@
 import * as client from "@sendgrid/mail"
 
-const sendEmail = (client, body, senderEmail, senderName) => {
+function sendEmail(client, body, senderEmail, senderName) {
   return new Promise((fulfill, reject) => {
     const data = {
       from: {
@@ -21,7 +21,7 @@ const sendEmail = (client, body, senderEmail, senderName) => {
   })
 }
 
-exports.handler = (event, context, callback) => {
+exports.handler = function(event, context, callback) {
   const {
     SENDGRID_API_KEY,
     SENDGRID_SENDER_EMAIL,

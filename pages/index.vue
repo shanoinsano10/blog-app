@@ -52,7 +52,7 @@
           <div class="tile is-parent">
             <article class="tile is-child notification is-sapphire-blue">
               <div class="content">
-                <p class="title">What can I do?</p>
+                <p class="title">How can I help?</p>
                 <p
                   class="subtitle"
                 >I mainly do full-stack JS application development, but I've also worked with a range of software building things from algorithms to websites. Ultimately, I take pride in mastering the best tools to bring products to life. I love collaborating with teams, and I can also work solo.</p>

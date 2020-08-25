@@ -37,8 +37,14 @@
       </section>
       <footer class="modal-card-foot has-text-right">
         <div class="has-text-right">
-          <button class="button" type="button" @click="$emit('close')">Close</button>
-          <button class="button is-blue-jeans" @click="handleSubmit(submit)" :disabled="sending">
+          <button class="button is-medium" type="button" @click="$emit('close')">
+            <span>Close</span>
+          </button>
+          <button
+            class="button is-blue-jeans is-medium"
+            @click="handleSubmit(submit)"
+            :loading="sending"
+          >
             <span>Submit</span>
           </button>
         </div>

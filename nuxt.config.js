@@ -29,7 +29,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/scss/main.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -53,13 +55,29 @@ export default {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     '@nuxtjs/axios',
+    'nuxt-fontawesome'
   ],
+  buefy: {
+    materialDesignIcons: false,
+    defaultIconPack: 'fas',
+    defaultIconComponent: 'font-awesome-icon'
+  },
+  fontawesome: {
+    component: 'font-awesome-icon',
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
   axios: {
     baseURL: '/',
   },
-  css: [
-    '@/assets/scss/main.scss'
-  ],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

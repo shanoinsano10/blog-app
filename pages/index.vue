@@ -7,9 +7,14 @@
             <article class="tile is-child notification is-blue-jeans">
               <div class="content">
                 <p class="title">Hi, I'm Shane.</p>
-                <p
-                  class="subtitle"
-                >I'm a software engineer based in New Hampshire. Currently, I develop applications for startups and local businesses. I enjoy the intersection of computation and human-centered design, so I'm always looking to work with companies that are helping people with unique digital products.</p>
+                <p class="subtitle">
+                  <b>I'm a software engineer</b> based in New Hampshire.
+                  Currently,
+                  <b>I develop applications</b>
+                  for startups and local businesses.
+                  <b>I like to create positive impact</b>
+                  through computation and design.
+                </p>
                 <!-- <div class="content has-text-centered">
                   <b-button type="is-primary">More About Me</b-button>
                 </div>-->
@@ -30,7 +35,11 @@
         </div>
       </div>
     </section>
-    <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg
+      class="wave-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
       <path
         fill="#226699"
         fill-opacity="1"
@@ -53,9 +62,12 @@
             <article class="tile is-child notification is-sapphire-blue">
               <div class="content">
                 <p class="title">How can I help?</p>
-                <p
-                  class="subtitle"
-                >I mainly do full-stack JS application development, but I've also worked with a range of software building things from algorithms to websites. Ultimately, I take pride in mastering the best tools to bring products to life. I love collaborating with teams, and I can also work solo.</p>
+                <p class="subtitle">
+                  I mainly do full-stack JS application development, but I've
+                  also built things from sensor algorithms to landing pages. I
+                  enjoy mastering the best tools for each job so
+                  <b> I can help bring products to life</b>.
+                </p>
                 <!-- <div class="content has-text-centered">
                   <b-button type="is-blue-jeans">Some of My Work</b-button>
                 </div>-->
@@ -65,7 +77,11 @@
         </div>
       </div>
     </section>
-    <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg
+      class="wave-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
       <path
         fill="#fff"
         fill-opacity="1"
@@ -90,7 +106,9 @@
             <article class="tile is-child notification is-white">
               <div class="content">
                 <p class="title">Say hello.</p>
-                <p class="subtitle">Share questions or feedback. I'm available for contract work.</p>
+                <p class="subtitle">
+                  I'm available for contract work.
+                </p>
                 <div class="content">
                   <div class="box is-shadowless has-text-centered">
                     <button
@@ -128,7 +146,11 @@
         </div>
       </div>
     </section>
-    <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg
+      class="wave-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
       <path
         fill="#AEBBC1"
         fill-opacity="1"

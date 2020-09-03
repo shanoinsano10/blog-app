@@ -3,9 +3,9 @@
     <img src="~/assets/lap-reg-512x512.svg" />
     <transition-group name="fade" tag="span" class="devicon-container">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
         v-for="i in [currentIndex]"
         :key="i"
+        xmlns="http://www.w3.org/2000/svg"
         aria-labelledby="title desc"
         class="devicon"
         viewBox="0 0 128 128"
@@ -14,11 +14,11 @@
         <desc id="desc">The {{ currentTool.name }} logo.</desc>
         <path
           v-for="(path, number) in currentTool.paths"
+          :id="path.id"
           :key="number"
           :d="path.d"
           :style="path.style"
           :class="path.class"
-          :id="path.id"
         />
       </svg>
     </transition-group>
@@ -45,11 +45,12 @@ export default {
           name: 'TypeScript',
           paths: [
             {
-              d: 'M2,63.91v62.5H127V1.41H2Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1A23,23,0,0,1,80,109.19c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82.5,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.73,58.93ZM73.39,64.15l0,5.12H57.16V115.5H45.65V69.26H29.38v-5a49.19,49.19,0,0,1,.14-5.16c.06-.08,10-.12,22-.1L73.33,59Z',
+              d:
+                'M2,63.91v62.5H127V1.41H2Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1A23,23,0,0,1,80,109.19c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82.5,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.73,58.93ZM73.39,64.15l0,5.12H57.16V115.5H45.65V69.26H29.38v-5a49.19,49.19,0,0,1,.14-5.16c.06-.08,10-.12,22-.1L73.33,59Z',
               id: 'plain',
-              class: 'cls-1'
-            }
-          ]
+              class: 'cls-1',
+            },
+          ],
         },
         {
           name: 'AngularJS',
@@ -173,6 +174,11 @@ export default {
       currentIndex: 0,
     }
   },
+  computed: {
+    currentTool() {
+      return this.tools[Math.abs(this.currentIndex) % this.tools.length]
+    },
+  },
   mounted() {
     this.startSlide()
   },
@@ -183,11 +189,6 @@ export default {
       }, 4000)
     },
   },
-  computed: {
-    currentTool() {
-      return this.tools[Math.abs(this.currentIndex) % this.tools.length]
-    },
-  },
 }
 </script>
 
@@ -195,12 +196,15 @@ export default {
 .has-blue-jeans-bg {
   background: #55acee;
 }
+
 .has-sapphire-blue-bg {
   background: #226699;
 }
+
 .has-silver-sand-bg {
   background: #aebbc1;
 }
+
 @media (max-width: 768px) {
   .is-reversed-mobile {
     flex-direction: column-reverse;
@@ -210,6 +214,7 @@ export default {
     display: none;
   }
 }
+
 .devicon-container {
   position: absolute;
   top: 0;
@@ -218,6 +223,7 @@ export default {
   right: 0;
   margin: auto;
 }
+
 .devicon {
   padding-bottom: 5%;
   max-width: 25%;
@@ -228,9 +234,11 @@ export default {
   right: 0;
   margin: auto;
 }
+
 .devicon path {
   fill: #fff;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
@@ -240,6 +248,7 @@ export default {
 .fade-leave-active {
   transition: all 1.5s ease-in-out;
 }
+
 .footer-button {
   margin: 0.5em;
 }

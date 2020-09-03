@@ -3,12 +3,8 @@
     <div class="content has-text-centered">
       <p>
         This site is made with
-        <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://nuxtjs.org/"
-        >
-            <img src="~/assets/nuxtjs-typo.svg" />
+        <a target="_blank" rel="noopener noreferrer" href="https://nuxtjs.org/">
+          <img src="~/assets/nuxtjs-typo.svg" />
         </a>
       </p>
       <p>
@@ -25,7 +21,7 @@
       <p>© 2020 Shane Earley</p>
     </div>
   </footer>
-</template> 
+</template>
 
 <style scoped>
 .has-margin-before {

@@ -8,8 +8,11 @@
       }"
     >
       <template slot="brand">
-        <!-- <b-navbar-item tag="router-link" :to="{ path: '/' }" class="logo-text"> -->
-        <b-navbar-item tag="div" class="logo-text">
+        <b-navbar-item
+          tag="router-link"
+          :to="{ path: '/' }"
+          class="navbar-logo-item"
+        >
           <img src="~/assets/logo-white.svg" alt="Wave logo icon" />
           <h4 class="title is-4 has-text-white has-margin-before">
             Shane Earley
@@ -53,6 +56,9 @@ export default {
 </script>
 
 <style>
+.navbar-logo-item {
+  background: transparent !important;
+}
 .has-margin-before {
   margin-left: 0.5em;
 }

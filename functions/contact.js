@@ -1,4 +1,4 @@
-import client, { setApiKey } from '@sendgrid/mail'
+const client = require('@sendgrid/mail')
 
 function sendEmail(client, body, senderEmail, senderName) {
   // eslint-disable-next-line promise/param-names
@@ -10,7 +10,7 @@ function sendEmail(client, body, senderEmail, senderName) {
       },
       subject: `Hello from ${senderName}: New message available!`,
       to: senderEmail,
-      html: `Hey Shane, you've a new message from <b>${body.name}</b> at <b>${body.email}</b><br/><b>Message</b>: ${body.msg}<br>Thanks,<br>${senderName}`,
+      html: `Hey Shane, you have a new message from <b>${body.name}</b> at <b>${body.email}</b><br/><b>Message</b>: ${body.msg}<br>Thanks,<br>${senderName}`,
     }
 
     client
@@ -22,7 +22,8 @@ function sendEmail(client, body, senderEmail, senderName) {
   })
 }
 
-export function handler(event, _context, callback) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+exports.handler = function (event, context, callback) {
   const {
     SENDGRID_API_KEY,
     SENDGRID_SENDER_EMAIL,
@@ -31,7 +32,7 @@ export function handler(event, _context, callback) {
 
   const body = JSON.parse(event.body)
 
-  setApiKey(SENDGRID_API_KEY)
+  client.setApiKey(SENDGRID_API_KEY)
 
   sendEmail(client, body, SENDGRID_SENDER_EMAIL, SENDGRID_SENDER_NAME)
     .then((response) => callback(null, { statusCode: response.statusCode }))

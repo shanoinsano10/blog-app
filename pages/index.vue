@@ -9,10 +9,11 @@
                 <div class="content has-text-white">
                   <p class="title">Hi, I'm Shane.</p>
                   <p class="subtitle">
-                    I'm a software engineer based in New Hampshire. Currently, I
-                    develop applications for startups and local businesses.
+                    I'm a software engineer based in New Hampshire that develops
+                    web and mobile applications for startups and local
+                    businesses.
                     <b>
-                      I like to create positive impact through computing and
+                      I love to create positive impact through computing and
                       design.</b
                     >
                   </p>
@@ -65,10 +66,10 @@
                 <div class="content">
                   <p class="title">How can I help?</p>
                   <p class="subtitle">
-                    I mainly do full-stack JS application development, but I've
-                    also built things from sensor algorithms to landing pages. I
-                    enjoy mastering the best tools for each job so
-                    <b> I can help bring products to life</b>.
+                    I mainly do full stack application development, but I also
+                    work on things from algorithms to websites. I like to
+                    combine practical execution with big picture thinking so
+                    <b> I can help bring great products to life</b>.
                   </p>
                 </div>
               </article>
@@ -106,7 +107,7 @@
                 <div class="content">
                   <p class="title">Say hello.</p>
                   <p class="subtitle">
-                    I'm available for contract work.
+                    I would love to hear about your project.
                   </p>
                   <div class="content">
                     <div class="box is-shadowless has-text-centered">
@@ -117,7 +118,7 @@
                         <b-icon pack="fas" icon="envelope" />
                         <span>Send a message</span>
                       </button>
-                      <a
+                      <!-- <a
                         class="button is-sapphire-blue is-medium footer-button"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -125,7 +126,7 @@
                       >
                         <b-icon pack="fas" icon="external-link-alt" />
                         <span>View my resume</span>
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>

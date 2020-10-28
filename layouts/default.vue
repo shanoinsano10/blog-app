@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="layout">
     <b-navbar
       spaced
       :class="{

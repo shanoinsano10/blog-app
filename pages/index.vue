@@ -1,24 +1,21 @@
 <template>
-  <div id="container">
+  <div id="page">
     <div class="has-white-blue-gradient-bg">
       <section class="section has-transparent-bg">
         <div class="container">
-          <div class="tile is-ancestor is-reversed-mobile">
+          <div class="tile is-ancestor">
             <div class="tile is-parent">
               <article class="tile is-child notification has-transparent-bg">
                 <div class="content has-text-white">
                   <p class="title">Hi, I'm Shane.</p>
                   <p class="subtitle">
-                    <b>I'm a software engineer</b> based in New Hampshire.
-                    Currently,
-                    <b>I develop applications</b>
-                    for startups and local businesses.
-                    <b>I like to create positive impact</b>
-                    through computation and design.
+                    I'm a software engineer based in New Hampshire. Currently, I
+                    develop applications for startups and local businesses.
+                    <b>
+                      I like to create positive impact through computing and
+                      design.</b
+                    >
                   </p>
-                  <!-- <div class="content has-text-centered">
-                  <b-button type="is-primary">More About Me</b-button>
-                </div>-->
                 </div>
               </article>
             </div>
@@ -53,7 +50,7 @@
     <div class="has-sapphire-blue-bg">
       <section class="section has-transparent-bg">
         <div class="container">
-          <div class="tile is-ancestor">
+          <div class="tile is-reversed-mobile is-ancestor">
             <div class="tile is-vertical is-4">
               <div class="tile">
                 <div class="tile is-parent">
@@ -73,9 +70,6 @@
                     enjoy mastering the best tools for each job so
                     <b> I can help bring products to life</b>.
                   </p>
-                  <!-- <div class="content has-text-centered">
-                  <b-button type="is-blue-jeans">Some of My Work</b-button>
-                </div>-->
                 </div>
               </article>
             </div>
@@ -97,15 +91,13 @@
     <div class="has-white-bg">
       <section class="section">
         <div class="container">
-          <div class="tile is-ancestor is-reversed-mobile has-text-centered">
+          <div class="tile is-ancestor has-text-centered">
             <div class="tile is-vertical is-2 is-hidden-mobile">
               <div class="tile">
                 <div class="tile is-parent">
-                  <article class="tile is-child notification is-white">
-                    <!-- <figure class="image is-1by1">
-                    <img src="~/assets/feather-reg-512x512.svg" />
-                  </figure>-->
-                  </article>
+                  <article
+                    class="tile is-child notification is-white"
+                  ></article>
                 </div>
               </div>
             </div>
@@ -142,11 +134,9 @@
             <div class="tile is-vertical is-2 is-hidden-mobile">
               <div class="tile">
                 <div class="tile is-parent">
-                  <article class="tile is-child notification is-white">
-                    <!-- <figure class="image is-1by1">
-                    <img src="~/assets/feather-reg-512x512.svg" />
-                  </figure>-->
-                  </article>
+                  <article
+                    class="tile is-child notification is-white"
+                  ></article>
                 </div>
               </div>
             </div>

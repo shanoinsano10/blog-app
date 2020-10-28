@@ -2,7 +2,6 @@
   <div>
     <b-navbar
       spaced
-      :mobile-burger="false"
       :class="{
         'is-blue-jeans': $route.name === 'index',
         'is-mandarin': $route.name === 'work',

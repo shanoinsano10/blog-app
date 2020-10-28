@@ -38,11 +38,18 @@ $link-focus-border: $sapphire-blue;
 
 .navbar-menu.is-active {
     background-color: transparent;
-    .navbar-item,
-    .navbar-item.is-active {
+    .navbar-item {
         background-color: transparent;
         color: #fff;
     }
+    .navbar-item.is-active {
+        font-weight: bold;
+        color: #fff07c !important;
+    }
+}
+.navbar-item.is-active {
+    font-weight: bold;
+    color: #fff07c !important;
 }
 
 // Import Bulma and Buefy styles

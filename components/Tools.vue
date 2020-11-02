@@ -1,6 +1,6 @@
 <template>
   <figure class="image is-1by1">
-    <img src="~/assets/lap-reg-512x512.svg" />
+    <img src="~/assets/laptop-white-color.svg" />
     <transition-group name="fade" tag="span" class="devicon-container">
       <svg
         v-for="i in [currentIndex]"
@@ -225,7 +225,7 @@ export default {
 }
 
 .devicon {
-  padding-bottom: 5%;
+  padding-bottom: 22.5%;
   max-width: 25%;
   position: absolute;
   top: 0;

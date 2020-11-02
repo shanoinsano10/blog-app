@@ -55,7 +55,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .navbar-logo-item {
   background: transparent !important;
 }

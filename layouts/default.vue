@@ -36,7 +36,7 @@
       <nuxt />
     </section>
 
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 

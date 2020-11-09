@@ -56,7 +56,7 @@
               <div class="tile">
                 <div class="tile is-parent">
                   <article class="tile is-child notification is-sapphire-blue">
-                    <Tools />
+                    <WorkSlider />
                   </article>
                 </div>
               </div>
@@ -160,13 +160,13 @@
 </template>
 
 <script>
-import Tools from '~/components/Tools'
-import Form from '~/components/Form'
+import WorkSlider from '~/components/WorkSlider'
+import ContactForm from '~/components/ContactForm'
 
 export default {
   name: 'HomePage',
   components: {
-    Tools,
+    WorkSlider,
   },
   data() {
     return {}
@@ -175,7 +175,7 @@ export default {
     cardModal() {
       this.$buefy.modal.open({
         parent: this,
-        component: Form,
+        component: ContactForm,
         hasModalCard: true,
         trapFocus: true,
       })

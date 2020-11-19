@@ -102,7 +102,7 @@ export default {
 
 .workicon {
   padding-bottom: 20%;
-  max-width: 25%;
+  max-width: 30%;
   position: absolute;
   top: 0;
   bottom: 0;

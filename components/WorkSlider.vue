@@ -26,12 +26,12 @@ export default {
           src: 'consensus',
         },
         {
-          name: 'Otter Therapies',
-          src: 'otter',
+          name: 'Fundmazing',
+          src: 'fundmazing',
         },
         {
-          name: 'Vital View Technologies',
-          src: 'vitalview',
+          name: 'Otter Therapies',
+          src: 'otter',
         },
         {
           name: 'Sonaphi',
@@ -40,6 +40,10 @@ export default {
         {
           name: 'Tattoo Studio',
           src: 'tattoostudio',
+        },
+        {
+          name: 'Vital View Technologies',
+          src: 'vitalview',
         },
       ],
       timer: null,

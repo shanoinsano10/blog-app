@@ -1,5 +1,5 @@
 <template>
-  <figure class="image is-1by1">
+  <figure class="image is-1by1 floating-animation">
     <img src="~/assets/laptop-white-color.svg" />
     <transition-group name="fade" tag="span" class="workicon-container">
       <img
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'WorkSlider',
+  name: 'WorkAnimation',
   components: {},
   data() {
     return {
@@ -127,5 +127,23 @@ export default {
 
 .footer-button {
   margin: 0.5em;
+}
+.floating-animation {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 </style>

@@ -7,7 +7,10 @@
             <div class="tile is-parent">
               <article class="tile is-child notification has-transparent-bg">
                 <div class="content has-text-white">
-                  <p class="title">Coming soon!</p>
+                  <p class="title is-1">Some recent work.</p>
+                  <p class="subtitle">
+                    I'm currently sketching out the details. Coming soon!
+                  </p>
                 </div>
               </article>
             </div>
@@ -27,17 +30,8 @@
           </div>
         </div>
       </section>
-      <svg
-        class="wave-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#226699"
-          fill-opacity="1"
-          d="M0,224L48,192C96,160,192,96,288,101.3C384,107,480,181,576,213.3C672,245,768,235,864,213.3C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        />
-      </svg>
+      <CloudsAnimation />
+      <WaveAnimation />
     </div>
     <div class="has-sapphire-blue-bg">
       <section class="section has-transparent-bg">
@@ -50,8 +44,13 @@
 </template>
 
 <script>
+import CloudsAnimation from '~/components/animations/CloudsAnimation'
+import WaveAnimation from '~/components/animations/WaveAnimation'
 export default {
   name: 'WorkPage',
-  components: {},
+  components: {
+    CloudsAnimation,
+    WaveAnimation,
+  },
 }
 </script>

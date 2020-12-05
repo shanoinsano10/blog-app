@@ -147,7 +147,26 @@ export default {
 .footer-button {
   margin: 0.5em;
 }
-.wave-svg {
-  display: block;
+.has-margin-before {
+  margin-left: 0.5em;
+}
+.has-blue-jeans-bg {
+  background: #55acee;
+}
+.has-sapphire-blue-bg {
+  background: #226699;
+}
+.has-silver-sand-bg {
+  background: #aebbc1;
+}
+.link-icon {
+  display: inline-block;
+}
+.footer-icon path {
+  fill: #226699;
+}
+p a img {
+  max-width: 5em;
+  padding-left: 0.25em;
 }
 </style>

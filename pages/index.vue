@@ -7,15 +7,13 @@
             <div class="tile is-parent">
               <article class="tile is-child notification has-transparent-bg">
                 <div class="content has-text-white">
-                  <p class="title">Hi, I'm Shane.</p>
+                  <p class="title is-1">
+                    Engineering waves of change.
+                  </p>
                   <p class="subtitle">
-                    I'm a software engineer based in New Hampshire that develops
-                    web and mobile applications for startups and local
-                    businesses.
-                    <b>
-                      I love to create positive impact through computing and
-                      design.</b
-                    >
+                    Hi, I'm Shane. I'm a software engineer based in New
+                    Hampshire who enjoys developing products to enhance the
+                    positive impact of people and businesses.
                   </p>
                 </div>
               </article>
@@ -36,17 +34,8 @@
           </div>
         </div>
       </section>
-      <svg
-        class="wave-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#226699"
-          fill-opacity="1"
-          d="M0,224L48,192C96,160,192,96,288,101.3C384,107,480,181,576,213.3C672,245,768,235,864,213.3C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        />
-      </svg>
+      <CloudsAnimation />
+      <WaveAnimation />
     </div>
     <div class="has-sapphire-blue-bg">
       <section class="section has-transparent-bg">
@@ -56,7 +45,7 @@
               <div class="tile">
                 <div class="tile is-parent">
                   <article class="tile is-child notification is-sapphire-blue">
-                    <WorkSlider />
+                    <WorkAnimation />
                   </article>
                 </div>
               </div>
@@ -66,30 +55,32 @@
                 <div class="content">
                   <p class="title">How can I help?</p>
                   <p class="subtitle">
-                    I mainly do full stack application development, but I also
-                    work on things from algorithms to websites. I like to
-                    combine practical execution with big picture thinking so
-                    <b> I can help bring great products to life</b>.
+                    I mainly do full-stack app development, while also doing
+                    things from algorithm design to websites. Along the way,
+                    I've been lucky to work with some great entrepreneurs and
+                    brands.
                   </p>
+                  <b-button
+                    size="is-medium"
+                    class="is-white"
+                    outlined
+                    icon-left="pencil-ruler"
+                    tag="router-link"
+                    to="/work"
+                  >
+                    See some work
+                  </b-button>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <svg
-        class="wave-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,96L48,106.7C96,117,192,139,288,154.7C384,171,480,181,576,176C672,171,768,149,864,149.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        />
-      </svg>
     </div>
-    <div class="has-white-bg">
+    <div class="has-yellow-crayola-bg">
+      <section class="section has-sapphire-blue-bg section-curved"></section>
+    </div>
+    <div class="has-yellow-crayola-bg">
       <section class="section">
         <div class="container">
           <div class="tile is-ancestor has-text-centered">
@@ -97,36 +88,31 @@
               <div class="tile">
                 <div class="tile is-parent">
                   <article
-                    class="tile is-child notification is-white"
+                    class="tile is-child notification is-yellow-crayola"
                   ></article>
                 </div>
               </div>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child notification is-white">
+              <article class="tile is-child notification is-yellow-crayola">
                 <div class="content">
                   <p class="title">Say hello.</p>
                   <p class="subtitle">
                     I would love to hear about your project.
                   </p>
                   <div class="content">
-                    <div class="box is-shadowless has-text-centered">
-                      <button
-                        class="button is-blue-jeans is-medium footer-button"
+                    <div
+                      class="box is-shadowless has-text-centered has-yellow-crayola-bg"
+                    >
+                      <b-button
+                        size="is-medium"
+                        class="is-dark"
+                        outlined
+                        icon-left="envelope"
                         @click="cardModal()"
                       >
-                        <b-icon pack="fas" icon="envelope" />
-                        <span>Send a message</span>
-                      </button>
-                      <!-- <a
-                        class="button is-sapphire-blue is-medium footer-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/Shane_Earley_Resume_August_2020.pdf"
-                      >
-                        <b-icon pack="fas" icon="external-link-alt" />
-                        <span>View my resume</span>
-                      </a> -->
+                        Send a message
+                      </b-button>
                     </div>
                   </div>
                 </div>
@@ -136,7 +122,7 @@
               <div class="tile">
                 <div class="tile is-parent">
                   <article
-                    class="tile is-child notification is-white"
+                    class="tile is-child notification is-yellow-crayola"
                   ></article>
                 </div>
               </div>
@@ -144,29 +130,22 @@
           </div>
         </div>
       </section>
-      <svg
-        class="wave-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#AEBBC1"
-          fill-opacity="1"
-          d="M0,32L48,64C96,96,192,160,288,176C384,192,480,160,576,160C672,160,768,192,864,224C960,256,1056,288,1152,293.3C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        />
-      </svg>
     </div>
   </div>
 </template>
 
 <script>
-import WorkSlider from '~/components/WorkSlider'
-import ContactForm from '~/components/ContactForm'
+import WorkAnimation from '~/components/animations/WorkAnimation'
+import CloudsAnimation from '~/components/animations/CloudsAnimation'
+import WaveAnimation from '~/components/animations/WaveAnimation'
+import ContactForm from '~/components/modals/ContactForm'
 
 export default {
   name: 'HomePage',
   components: {
-    WorkSlider,
+    WorkAnimation,
+    CloudsAnimation,
+    WaveAnimation,
   },
   data() {
     return {}
@@ -183,3 +162,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+.section-curved {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+</style>

@@ -68,10 +68,10 @@
   top: 5rem;
   fill: #fff;
   /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
-  -webkit-animation: move 20s linear infinite;
-  -moz-animation: move 20s linear infinite;
-  -o-animation: move 20s linear infinite;
-  animation: move 20s linear infinite;
+  -webkit-animation: move 75s linear infinite;
+  -moz-animation: move 75s linear infinite;
+  -o-animation: move 75s linear infinite;
+  animation: move 75s linear infinite;
 }
 
 .cloud2 {
@@ -79,10 +79,10 @@
   height: 300px;
   top: 10rem;
   fill: #fff;
-  -webkit-animation: move 35s linear 5s infinite backwards;
-  -moz-animation: move 35s linear 5s infinite backwards;
-  -o-animation: move 35s linear 5s infinite backwards;
-  animation: move 35s linear 5s infinite backwards;
+  -webkit-animation: move 100s linear 2.5s infinite backwards;
+  -moz-animation: move 100s linear 2.5s infinite backwards;
+  -o-animation: move 100s linear 2.5s infinite backwards;
+  animation: move 100s linear 2.5s infinite backwards;
 }
 
 .cloud3 {
@@ -90,18 +90,18 @@
   height: 100px;
   top: 15rem;
   fill: #fff;
-  -webkit-animation: move 50s linear 10s infinite backwards;
-  -moz-animation: move 50s linear 10s infinite backwards;
-  -o-animation: move 50s linear 10s infinite backwards;
-  animation: move 50s linear 10s infinite backwards;
+  -webkit-animation: move 50s linear 5s infinite backwards;
+  -moz-animation: move 50s linear 5s infinite backwards;
+  -o-animation: move 50s linear 5s infinite backwards;
+  animation: move 50s linear 5s infinite backwards;
 }
 
 @keyframes move {
   from {
-    -webkit-transform: translateX(-25vw);
+    -webkit-transform: translateX(-300px);
   }
   to {
-    -webkit-transform: translateX(125vw);
+    -webkit-transform: translateX(calc(100vw + 300px));
   }
 }
 </style>

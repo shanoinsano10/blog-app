@@ -12,8 +12,8 @@
                   </p>
                   <p class="subtitle">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products to enhance the
-                    positive impact of people and businesses.
+                    Hampshire who enjoys developing products with people and
+                    businesses to make a positive impact.
                   </p>
                 </div>
               </article>
@@ -55,20 +55,20 @@
                 <div class="content">
                   <p class="title">How can I help?</p>
                   <p class="subtitle">
-                    I mainly do full-stack app development, while also doing
-                    things from algorithm design to websites. Along the way,
-                    I've been lucky to work with some great entrepreneurs and
-                    brands.
+                    I mainly develop full-stack apps, but I also build things
+                    from algorithms to websites. Along the way, I've been lucky
+                    to work with some great entrepreneurs and companies.
                   </p>
                   <b-button
                     size="is-medium"
-                    class="is-white"
+                    class="is-primary is-light"
+                    inverted
                     outlined
-                    icon-left="pencil-ruler"
+                    icon-right="arrow-circle-right"
                     tag="router-link"
                     to="/work"
                   >
-                    See some work
+                    Learn more
                   </b-button>
                 </div>
               </article>

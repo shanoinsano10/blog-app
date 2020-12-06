@@ -96,6 +96,27 @@
   animation: move 50s linear 5s infinite backwards;
 }
 
+@media only screen and (max-width: 768px) {
+  .cloud1 {
+    -webkit-animation: move 60s linear infinite;
+    -moz-animation: move 60s linear infinite;
+    -o-animation: move 60s linear infinite;
+    animation: move 60s linear infinite;
+  }
+  .cloud2 {
+    -webkit-animation: move 80s linear 2.5s infinite backwards;
+    -moz-animation: move 80s linear 2.5s infinite backwards;
+    -o-animation: move 80s linear 2.5s infinite backwards;
+    animation: move 80s linear 2.5s infinite backwards;
+  }
+  .cloud3 {
+    -webkit-animation: move 40s linear 5s infinite backwards;
+    -moz-animation: move 40s linear 5s infinite backwards;
+    -o-animation: move 40s linear 5s infinite backwards;
+    animation: move 40s linear 5s infinite backwards;
+  }
+}
+
 @keyframes move {
   from {
     -webkit-transform: translateX(-300px);

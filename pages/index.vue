@@ -8,12 +8,12 @@
               <article class="tile is-child notification has-transparent-bg">
                 <div class="content has-text-white">
                   <p class="title is-1">
-                    Engineering waves of change.
+                    Building waves of impact.
                   </p>
                   <p class="subtitle">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with people and
-                    businesses to make a positive impact.
+                    Hampshire who enjoys developing products with intentionally
+                    driven people and businesses.
                   </p>
                 </div>
               </article>

@@ -65,6 +65,9 @@ export default {
 .link-icon {
   display: inline-block;
 }
+.footer {
+  padding-bottom: 3rem;
+}
 .footer-icon path {
   fill: #226699;
 }

@@ -2,10 +2,11 @@
   <footer class="footer has-silver-sand-bg">
     <div class="content has-text-centered">
       <p>
-        This site is made with
+        Built with love and
         <a target="_blank" rel="noopener noreferrer" href="https://nuxtjs.org/">
           <img src="~/assets/nuxtjs-typo.svg" />
         </a>
+        in New Hampshire
       </p>
       <p>
         <a
@@ -14,7 +15,7 @@
           href="https://github.com/shanoinsano10/shaneearleydev"
           class="is-primary"
         >
-          Check out the source on GitHub
+          Check out the source
           <b-icon class="link-icon" pack="fab" icon="github" />
         </a>
       </p>

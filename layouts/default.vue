@@ -172,4 +172,8 @@ p a img {
   max-width: 5em;
   padding-left: 0.25em;
 }
+.section-curved {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
 </style>

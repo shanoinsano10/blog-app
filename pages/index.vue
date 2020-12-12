@@ -162,9 +162,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.section-curved {
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-</style>

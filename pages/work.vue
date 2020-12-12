@@ -31,7 +31,10 @@
         </div>
       </section>
       <CloudsAnimation />
-      <WaveAnimation />
+      <SnowAnimation />
+    </div>
+    <div class="has-sapphire-blue-bg">
+      <section class="section has-white-bg section-curved"></section>
     </div>
     <div class="has-sapphire-blue-bg">
       <section class="section has-transparent-bg">
@@ -45,12 +48,12 @@
 
 <script>
 import CloudsAnimation from '~/components/animations/CloudsAnimation'
-import WaveAnimation from '~/components/animations/WaveAnimation'
+import SnowAnimation from '~/components/animations/SnowAnimation'
 export default {
   name: 'WorkPage',
   components: {
     CloudsAnimation,
-    WaveAnimation,
+    SnowAnimation,
   },
 }
 </script>

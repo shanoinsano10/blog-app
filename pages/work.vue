@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <div class="has-yellow-orange-gradient-bg">
+    <div class="has-white-blue-gradient-bg">
       <section class="section has-transparent-bg">
         <div class="container">
           <div class="tile is-ancestor">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </section>
-      <CloudsAnimation />
+      <SnowflakesAnimation />
       <SnowAnimation />
     </div>
     <div class="has-sapphire-blue-bg">
@@ -47,12 +47,12 @@
 </template>
 
 <script>
-import CloudsAnimation from '~/components/animations/CloudsAnimation'
+import SnowflakesAnimation from '~/components/animations/SnowflakesAnimation'
 import SnowAnimation from '~/components/animations/SnowAnimation'
 export default {
   name: 'WorkPage',
   components: {
-    CloudsAnimation,
+    SnowflakesAnimation,
     SnowAnimation,
   },
 }

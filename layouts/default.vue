@@ -1,12 +1,6 @@
 <template>
   <div id="layout">
-    <b-navbar
-      spaced
-      :class="{
-        'is-blue-jeans': $route.name === 'index',
-        'is-mandarin': $route.name === 'work',
-      }"
-    >
+    <b-navbar spaced class="is-blue-jeans">
       <template slot="brand">
         <b-navbar-item
           tag="router-link"

@@ -5,10 +5,10 @@
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child notification has-transparent-bg">
-                <div class="content has-text-white has-text-centered">
-                  <p class="title is-1">Some recent work.</p>
-                  <p class="subtitle">
+              <article class="tile is-child has-transparent-bg">
+                <div class="content has-text-centered">
+                  <p class="title is-1 has-text-white">Some recent work.</p>
+                  <p class="subtitle has-text-white">
                     I'm still sketching out finer details and gathering links,
                     but check out these high-level blurbs on a few hand-picked
                     projects.
@@ -32,9 +32,7 @@
               <div class="tile">
                 <div class="tile">
                   <div class="tile">
-                    <article
-                      class="tile is-child has-transparent-bg has-text-centered"
-                    >
+                    <article class="tile has-transparent-bg has-text-centered">
                       <figure class="image work-image">
                         <img
                           class="work-logo"
@@ -48,7 +46,7 @@
             </div>
             <div class="tile">
               <div class="tile">
-                <article class="tile is-child notification has-transparent-bg">
+                <article class="tile has-transparent-bg">
                   <div class="content has-text-centered">
                     <p class="subtitle">
                       <a
@@ -136,7 +134,7 @@ export default {
 
 <style lang="scss" scoped>
 .work-wrapper {
-  padding: 3rem;
+  padding: 1rem;
 }
 .work-card {
   border-radius: 8px;

@@ -172,4 +172,7 @@ p a img {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
+.padded-article {
+  padding: 1rem !important;
+}
 </style>

@@ -5,12 +5,12 @@
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child notification has-transparent-bg">
-                <div class="content has-text-white">
-                  <p class="title is-1">
+              <article class="tile is-child padded-article has-transparent-bg">
+                <div class="content">
+                  <p class="title is-1 has-text-white">
                     Building waves of impact.
                   </p>
-                  <p class="subtitle">
+                  <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
                     Hampshire who enjoys developing products with intentionally
                     driven people and businesses.
@@ -22,7 +22,7 @@
               <div class="tile">
                 <div class="tile is-parent">
                   <article
-                    class="tile is-child notification has-transparent-bg"
+                    class="tile is-child padded-article has-transparent-bg"
                   >
                     <figure class="image is-1by1">
                       <img src="~/assets/logo-colors.svg" />
@@ -44,17 +44,19 @@
             <div class="tile is-vertical is-4">
               <div class="tile">
                 <div class="tile is-parent">
-                  <article class="tile is-child notification is-sapphire-blue">
+                  <article
+                    class="tile is-child padded-article is-sapphire-blue"
+                  >
                     <WorkAnimation />
                   </article>
                 </div>
               </div>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child notification is-sapphire-blue">
+              <article class="tile is-child padded-article is-sapphire-blue">
                 <div class="content">
-                  <p class="title">How can I help?</p>
-                  <p class="subtitle">
+                  <p class="title has-text-white">How can I help?</p>
+                  <p class="subtitle has-text-white">
                     I mainly develop full-stack apps, but I also build things
                     from algorithms to websites. Along the way, I've been lucky
                     to work with some great entrepreneurs and companies.

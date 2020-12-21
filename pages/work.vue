@@ -5,20 +5,24 @@
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child has-transparent-bg">
+              <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content has-text-centered">
                   <p class="title is-1 has-text-white">Some recent work.</p>
-                  <p class="subtitle has-text-white">
-                    I'm still sketching out finer details and gathering links,
-                    but check out these high-level blurbs on a few hand-picked
+                  <!-- <p class="subtitle has-text-white">
+                    Check out these high-level blurbs on a few hand-picked
                     projects.
-                  </p>
+                  </p> -->
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
+    </div>
+    <div class="has-blue-jeans-bg">
+      <section
+        class="section has-sapphire-blue-bg section-concave-down"
+      ></section>
     </div>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
@@ -68,10 +72,67 @@
         </section>
       </div>
     </div>
+    <div class="has-yellow-crayola-bg">
+      <section
+        class="section has-sapphire-blue-bg section-concave-up"
+      ></section>
+    </div>
+    <div class="has-yellow-crayola-bg">
+      <section class="section">
+        <div class="container">
+          <div class="tile is-ancestor has-text-centered">
+            <div class="tile is-vertical is-2 is-hidden-mobile">
+              <div class="tile">
+                <div class="tile is-parent">
+                  <article
+                    class="tile is-child padded-article is-yellow-crayola"
+                  ></article>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child padded-article is-yellow-crayola">
+                <div class="content">
+                  <p class="title">Say hello.</p>
+                  <p class="subtitle">
+                    I would love to hear about your project.
+                  </p>
+                  <div class="content">
+                    <div
+                      class="box is-shadowless has-text-centered has-yellow-crayola-bg"
+                    >
+                      <b-button
+                        size="is-medium"
+                        class="is-dark"
+                        outlined
+                        icon-left="envelope"
+                        @click="cardModal()"
+                      >
+                        Send a message
+                      </b-button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-vertical is-2 is-hidden-mobile">
+              <div class="tile">
+                <div class="tile is-parent">
+                  <article
+                    class="tile is-child padded-article is-yellow-crayola"
+                  ></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
+import ContactForm from '~/components/modals/ContactForm.vue'
 export default {
   name: 'WorkPage',
   components: {},
@@ -129,6 +190,16 @@ export default {
       ],
     }
   },
+  methods: {
+    cardModal() {
+      this.$buefy.modal.open({
+        parent: this,
+        component: ContactForm,
+        hasModalCard: true,
+        trapFocus: true,
+      })
+    },
+  },
 }
 </script>
 
@@ -148,8 +219,8 @@ export default {
 }
 .work-image {
   height: 256px;
-  width: 256px;
   margin: auto;
+  margin-bottom: 50px;
 }
 .work-image img {
   height: 100%;

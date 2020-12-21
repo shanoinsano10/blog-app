@@ -139,7 +139,7 @@ export default {
           site: 'https://consensusnetworks.com/',
           src: 'consensus',
           desc:
-            ' builds intelligent medical supply chain management using Internet of Things, machine learning and blockchain. I have lead development for their healthcare enterprise resource planning software.',
+            ' builds advanced medical supply chain tools using Internet of Things, machine learning and blockchain. I have lead development for their healthcare enterprise resource planning software.',
         },
         {
           name: 'Fundmazing',
@@ -147,7 +147,7 @@ export default {
           site: '',
           src: 'fundmazing',
           desc:
-            ' connects schools directly with product distributors to make online fundraising a breeze. I have developed several features for the platform including payment handling and mobile continuous integration/continuous deployment.',
+            ' connects students and product distributors online to streamline school fundraising events. I have developed core features for the platform including payment handling from front to back.',
         },
         {
           name: 'Otter Therapies',
@@ -155,7 +155,7 @@ export default {
           site: 'https://ottertherapies.com',
           src: 'otter',
           desc:
-            ' provides a care coordination platform for parents and caregivers of special needs children. As a technical co-founder, I have served as the head of technology and built the web and mobile applications.',
+            ' provides a care coordination platform for parents and caregivers of special needs children. As a technical co-founder, I have served as the head of engineering and developed the web and mobile applications.',
         },
         {
           name: 'Sonaphi',
@@ -163,7 +163,7 @@ export default {
           site: 'https://sonaphi.com',
           src: 'sonaphi',
           desc:
-            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have built multiple applications for initial testing and I have recently led product management for the clinical platform.',
+            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have led product management for the clinical platform and built multiple application versions for user testing.',
         },
         {
           name: 'Tattoo Studio',
@@ -171,7 +171,7 @@ export default {
           site: 'https://tattoostudiopro.com/',
           src: 'tattoostudio',
           desc:
-            ' digitizes and automates the management of customers, release forms and appointments for studio owners. I have built multiple features including a calendar with customer appointments and reminders.',
+            ' streamlines the management of customers release forms and appointments for studio owners. I have developed core features including appointments scheduling and customer reminders.',
         },
         {
           name: 'Vital View',

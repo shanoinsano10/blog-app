@@ -215,7 +215,8 @@ export default {
   padding: 2rem;
 }
 .work-image {
-  width: 256px;
+  max-width: 256px;
+  width: 100%;
   margin: auto;
 }
 .work-image img {

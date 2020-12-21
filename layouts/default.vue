@@ -1,8 +1,9 @@
 <template>
   <div id="layout">
-    <b-navbar spaced fixed-top class="is-blue-jeans">
+    <b-navbar :close-on-click="true" spaced class="is-blue-jeans">
       <template slot="brand">
         <b-navbar-item
+          ref="navbar"
           tag="router-link"
           :to="{ path: '/' }"
           class="navbar-logo-item"
@@ -14,14 +15,19 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <nuxt-link :to="'/'" class="navbar-item" exact-active-class="is-active"
-          >Home</nuxt-link
+        <b-navbar-item
+          tag="router-link"
+          :to="'/'"
+          class="navbar-item"
+          exact-active-class="is-active"
+          >Home</b-navbar-item
         >
-        <nuxt-link
+        <b-navbar-item
+          tag="router-link"
           :to="'work'"
           class="navbar-item"
           exact-active-class="is-active"
-          >Work</nuxt-link
+          >Work</b-navbar-item
         >
       </template>
     </b-navbar>
@@ -48,6 +54,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background-color: #55acee !important;
+}
 .navbar-logo-item {
   background: transparent !important;
 }

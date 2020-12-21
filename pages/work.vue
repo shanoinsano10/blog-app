@@ -8,10 +8,6 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content has-text-centered">
                   <p class="title is-1 has-text-white">Some recent work.</p>
-                  <!-- <p class="subtitle has-text-white">
-                    Check out these high-level blurbs on a few hand-picked
-                    projects.
-                  </p> -->
                 </div>
               </article>
             </div>
@@ -26,17 +22,15 @@
     </div>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
-        <section
-          v-for="currentLogo in workLogos"
-          :key="currentLogo"
-          class="section"
-        >
+        <section v-for="(currentLogo, i) in workLogos" :key="i" class="section">
           <div class="container">
             <div class="tile">
               <div class="tile">
                 <div class="tile">
                   <div class="tile">
-                    <article class="tile has-transparent-bg has-text-centered">
+                    <article
+                      class="tile has-transparent-bg work-image-article has-text-centered"
+                    >
                       <figure class="image work-image">
                         <img
                           class="work-logo"
@@ -60,7 +54,7 @@
                         class="is-primary"
                         :style="`color: ${currentLogo.color}; text-decoration: none;`"
                       >
-                        {{ currentLogo.name }}
+                        <b>{{ currentLogo.name }}</b>
                       </a>
                       {{ currentLogo.desc }}
                     </p>
@@ -157,7 +151,7 @@ export default {
         },
         {
           name: 'Otter Therapies',
-          color: '#1C1C4C',
+          color: '#66D3C1',
           site: 'https://ottertherapies.com',
           src: 'otter',
           desc:
@@ -173,7 +167,7 @@ export default {
         },
         {
           name: 'Tattoo Studio',
-          color: '#101112',
+          color: '#DCC2A3',
           site: 'https://tattoostudiopro.com/',
           src: 'tattoostudio',
           desc:
@@ -217,10 +211,12 @@ export default {
     margin: auto;
   }
 }
+.work-image-article {
+  padding: 2rem;
+}
 .work-image {
-  height: 256px;
+  width: 256px;
   margin: auto;
-  margin-bottom: 50px;
 }
 .work-image img {
   height: 100%;

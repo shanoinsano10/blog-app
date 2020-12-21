@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <b-navbar spaced class="is-blue-jeans">
+    <b-navbar spaced fixed-top class="is-blue-jeans">
       <template slot="brand">
         <b-navbar-item
           tag="router-link"
@@ -37,9 +37,7 @@
 <script>
 export default {
   data() {
-    return {
-      items: [],
-    }
+    return {}
   },
   head() {
     return {
@@ -166,8 +164,12 @@ p a img {
   max-width: 5em;
   padding-left: 0.25em;
 }
-.section-curved {
+.section-concave-up {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+}
+.section-concave-down {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 </style>

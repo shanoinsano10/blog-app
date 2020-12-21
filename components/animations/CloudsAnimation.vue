@@ -79,10 +79,10 @@
   height: 300px;
   top: 10rem;
   fill: #fff;
-  -webkit-animation: move 100s linear 2.5s infinite backwards;
-  -moz-animation: move 100s linear 2.5s infinite backwards;
-  -o-animation: move 100s linear 2.5s infinite backwards;
-  animation: move 100s linear 2.5s infinite backwards;
+  -webkit-animation: move 100s linear infinite backwards;
+  -moz-animation: move 100s linear infinite backwards;
+  -o-animation: move 100s linear infinite backwards;
+  animation: move 100s linear infinite backwards;
 }
 
 .cloud3 {
@@ -90,10 +90,10 @@
   height: 100px;
   top: 15rem;
   fill: #fff;
-  -webkit-animation: move 50s linear 5s infinite backwards;
-  -moz-animation: move 50s linear 5s infinite backwards;
-  -o-animation: move 50s linear 5s infinite backwards;
-  animation: move 50s linear 5s infinite backwards;
+  -webkit-animation: move 50s linear infinite backwards;
+  -moz-animation: move 50s linear infinite backwards;
+  -o-animation: move 50s linear infinite backwards;
+  animation: move 50s linear infinite backwards;
 }
 
 @media only screen and (max-width: 768px) {
@@ -104,16 +104,16 @@
     animation: move 60s linear infinite;
   }
   .cloud2 {
-    -webkit-animation: move 80s linear 2.5s infinite backwards;
-    -moz-animation: move 80s linear 2.5s infinite backwards;
-    -o-animation: move 80s linear 2.5s infinite backwards;
-    animation: move 80s linear 2.5s infinite backwards;
+    -webkit-animation: move 80s linear infinite backwards;
+    -moz-animation: move 80s linear infinite backwards;
+    -o-animation: move 80s linear infinite backwards;
+    animation: move 80s linear infinite backwards;
   }
   .cloud3 {
-    -webkit-animation: move 40s linear 5s infinite backwards;
-    -moz-animation: move 40s linear 5s infinite backwards;
-    -o-animation: move 40s linear 5s infinite backwards;
-    animation: move 40s linear 5s infinite backwards;
+    -webkit-animation: move 40s linear infinite backwards;
+    -moz-animation: move 40s linear infinite backwards;
+    -o-animation: move 40s linear infinite backwards;
+    animation: move 40s linear infinite backwards;
   }
 }
 

@@ -78,7 +78,9 @@
       </section>
     </div>
     <div class="has-yellow-crayola-bg">
-      <section class="section has-sapphire-blue-bg section-curved"></section>
+      <section
+        class="section has-sapphire-blue-bg section-concave-up"
+      ></section>
     </div>
     <div class="has-yellow-crayola-bg">
       <section class="section">

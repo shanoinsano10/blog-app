@@ -24,7 +24,7 @@
         >
         <b-navbar-item
           tag="router-link"
-          :to="'work'"
+          :to="'/work'"
           class="navbar-item"
           exact-active-class="is-active"
           >Work</b-navbar-item

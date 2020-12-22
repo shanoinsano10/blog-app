@@ -6,9 +6,9 @@
         class="content has-text-centered has-white-bg footer-card"
       >
         <p>
-          {{ waves.forecast.conditions.value | TitleCase }} Conditions at
-          {{ waves.spot.name }}
+          <strong>Surf Report @ {{ waves.spot.name }}</strong>
         </p>
+        <p>{{ waves.forecast.conditions.value | TitleCase }} Conditions</p>
         <p class="has-text-with-icons">
           <b-icon pack="fas" icon="water" size="is-small"></b-icon>
           {{

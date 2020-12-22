@@ -1,9 +1,9 @@
 <template>
   <ValidationProvider
+    v-slot="{ errors, valid }"
     :vid="vid"
     :name="$attrs.name || $attrs.label"
     :rules="rules"
-    v-slot="{ errors, valid }"
   >
     <b-field
       class="form-field"
@@ -27,6 +27,7 @@ export default {
   props: {
     vid: {
       type: String,
+      required: true,
     },
     rules: {
       type: [Object, String],
@@ -35,6 +36,7 @@ export default {
     // must be included in props
     value: {
       type: null,
+      required: true,
     },
   },
   data: () => ({

@@ -202,7 +202,7 @@ export default {
   padding: 1rem;
 }
 .work-card {
-  border-radius: 8px;
+  border-radius: 4px;
   max-width: 800px;
   margin: auto;
   .section {

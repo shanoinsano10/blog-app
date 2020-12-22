@@ -29,16 +29,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    '@/assets/scss/main.scss'
-  ],
+  css: ['@/assets/scss/main.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    "~/plugins/vee-validate.js"
-  ],
+  plugins: ['~/plugins/vee-validate.js', '@/plugins/filters.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -47,7 +43,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/moment'],
   /*
    ** Nuxt.js modules
    */
@@ -55,25 +51,25 @@ export default {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     '@nuxtjs/axios',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
   ],
   buefy: {
     materialDesignIcons: false,
     defaultIconPack: 'fas',
-    defaultIconComponent: 'font-awesome-icon'
+    defaultIconComponent: 'font-awesome-icon',
   },
   fontawesome: {
     component: 'font-awesome-icon',
     imports: [
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
+        icons: ['fab'],
       },
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
-    ]
+        icons: ['fas'],
+      },
+    ],
   },
   axios: {
     baseURL: '/',
@@ -83,6 +79,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    transpile: ["vee-validate/dist/rules"],
+    transpile: ['vee-validate/dist/rules'],
   },
 }

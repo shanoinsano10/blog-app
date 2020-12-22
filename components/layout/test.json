@@ -1,0 +1,306 @@
+{
+    "associated": {
+        "localPhotosUrl": "http://www.surfline.com/photos/#!/gallery/location/north-america/new-england/new-hampshire---maine/the-wall--hampton-beach/",
+        "chartsUrl": "/surf-charts/wave-height/new-hampshire/5a68fec76556ab001a43ccfc",
+        "beachesUrl": "https://www.surfline.com/travel/united-states/new-hampshire/rockingham-county/town-of-hampton/hampton-surfing-and-beaches/5087110",
+        "subregionUrl": "https://www.surfline.com/surf-forecasts/new-hampshire/5a68fec76556ab001a43ccfc",
+        "href": "https://www.surfline.com/surf-report/the-wall/5842041f4e65fad6a77089e9",
+        "units": {
+            "temperature": "F",
+            "tideHeight": "FT",
+            "swellHeight": "FT",
+            "waveHeight": "FT",
+            "windSpeed": "KTS",
+            "model": "LOLA"
+        },
+        "advertising": {
+            "spotId": "5131",
+            "subregionId": "20897",
+            "sst": "41-45"
+        },
+        "analytics": {
+            "spotId": "5131",
+            "subregionId": "20897"
+        },
+        "weatherIconPath": "https://wa.cdn-surfline.com/quiver/0.18.0/weathericons",
+        "utcOffset": -5,
+        "abbrTimezone": "EST"
+    },
+    "units": {
+        "temperature": "F",
+        "tideHeight": "FT",
+        "swellHeight": "FT",
+        "waveHeight": "FT",
+        "windSpeed": "KTS",
+        "model": "LOLA"
+    },
+    "spot": {
+        "name": "The Wall",
+        "breadcrumb": [
+            {
+                "name": "United States",
+                "href": "https://www.surfline.com/surf-reports-forecasts-cams/united-states/6252001"
+            },
+            {
+                "name": "New Hampshire",
+                "href": "https://www.surfline.com/surf-reports-forecasts-cams/united-states/new-hampshire/5090174"
+            },
+            {
+                "name": "Rockingham County",
+                "href": "https://www.surfline.com/surf-reports-forecasts-cams/united-states/new-hampshire/rockingham-county/5091860"
+            },
+            {
+                "name": "Hampton",
+                "href": "https://www.surfline.com/surf-reports-forecasts-cams/united-states/new-hampshire/rockingham-county/town-of-hampton/hampton/5087110"
+            }
+        ],
+        "lat": 42.9376373334092,
+        "lon": -70.7914137840271,
+        "cameras": [
+            {
+                "_id": "5834a157e411dc743a5d52f0",
+                "title": "NE - The Wall, Hampton Beach",
+                "streamUrl": "https://cams.cdn-surfline.com/cdn-ec/ec-hampton/playlist.m3u8",
+                "stillUrl": "https://camstills.cdn-surfline.com/ec-hampton/latest_small.jpg",
+                "rewindBaseUrl": "https://camrewinds.cdn-surfline.com/ec-hampton/ec-hampton",
+                "isPremium": true,
+                "isPrerecorded": false,
+                "lastPrerecordedClipStartTimeUTC": "2020-12-21T14:57:51.369Z",
+                "lastPrerecordedClipEndTimeUTC": "2020-12-21T14:57:51.369Z",
+                "alias": "ec-hampton",
+                "status": {
+                    "isDown": true,
+                    "message": "We're sorry to report this camera is down. The Surfline team is aware of the issue and is currently working toward a resolution.",
+                    "subMessage": "Please note: the down time is due to power outages at this location. The camera will return when these issues are resolved.",
+                    "altMessage": "Camera Down"
+                },
+                "control": "https://camstills.cdn-surfline.com/ec-hampton/latest_small.jpg",
+                "nighttime": false,
+                "rewindClip": "https://camrewinds.cdn-surfline.com/ec-hampton/ec-hampton.1000.2020-12-21.mp4"
+            },
+            {
+                "_id": "5a0d9c9e05342b001ca060fe",
+                "title": "NE - The Wall North",
+                "streamUrl": "https://cams.cdn-surfline.com/cdn-ec/ec-wallnorth/playlist.m3u8",
+                "stillUrl": "https://camstills.cdn-surfline.com/ec-wallnorth/latest_small.jpg",
+                "rewindBaseUrl": "https://camrewinds.cdn-surfline.com/ec-wallnorth/ec-wallnorth",
+                "isPremium": false,
+                "isPrerecorded": false,
+                "lastPrerecordedClipStartTimeUTC": "2020-12-21T14:57:51.370Z",
+                "lastPrerecordedClipEndTimeUTC": "2020-12-21T14:57:51.370Z",
+                "alias": "ec-wallnorth",
+                "status": {
+                    "isDown": false,
+                    "message": "",
+                    "subMessage": "",
+                    "altMessage": ""
+                },
+                "control": "https://camstills.cdn-surfline.com/ec-wallnorth/latest_small.jpg",
+                "nighttime": false,
+                "rewindClip": "https://camrewinds.cdn-surfline.com/ec-wallnorth/ec-wallnorth.1000.2020-12-21.mp4"
+            }
+        ],
+        "subregion": {
+            "_id": "5a68fec76556ab001a43ccfc",
+            "forecastStatus": "active"
+        },
+        "abilityLevels": [
+            "BEGINNER",
+            "INTERMEDIATE",
+            "ADVANCED"
+        ],
+        "boardTypes": [
+            "SHORTBOARD",
+            "FUNBOARD",
+            "LONGBOARD",
+            "FISH",
+            "BODYBOARD"
+        ],
+        "travelDetails": {
+            "abilityLevels": {
+                "description": "Beginner to Advanced",
+                "levels": [
+                    "BEGINNER",
+                    "INTERMEDIATE",
+                    "ADVANCED"
+                ],
+                "summary": "BEGINNER, INTERMEDIATE, ADVANCED"
+            },
+            "best": {
+                "season": {
+                    "description": "Spring, Fall",
+                    "value": []
+                },
+                "tide": {
+                    "description": "Incoming; all tides when over 4 feet",
+                    "value": [
+                        "Low",
+                        "Medium_Low"
+                    ]
+                },
+                "size": {
+                    "description": "Head high",
+                    "value": [
+                        "2-10"
+                    ]
+                },
+                "windDirection": {
+                    "description": "North-West, West",
+                    "value": []
+                },
+                "swellDirection": {
+                    "description": "All",
+                    "value": []
+                }
+            },
+            "bottom": {
+                "description": "Sand",
+                "value": [
+                    "Sand"
+                ]
+            },
+            "crowdFactor": {
+                "description": "Thick",
+                "rating": 7,
+                "summary": "Moderate"
+            },
+            "localVibe": {
+                "description": "You're being watched",
+                "rating": 4,
+                "summary": "Doable"
+            },
+            "shoulderBurn": {
+                "description": "6.",
+                "rating": 6,
+                "summary": "Medium"
+            },
+            "spotRating": {
+                "description": "4.",
+                "rating": 4,
+                "summary": "Fun"
+            },
+            "waterQuality": {
+                "description": "",
+                "rating": null,
+                "summary": null
+            },
+            "travelId": "670",
+            "access": "Easy",
+            "breakType": [
+                "Rights",
+                "Lefts",
+                "Beach_Break"
+            ],
+            "description": "When it comes to New Hampshire surf spots, the times change, but the spots' names and the vibe around them often remain the same. The Wall is where everyone checks, hangs and surfs on the 330 days each year that the points aren't breaking. It's the only ridable spot when the surf is under three feet, and it's always bigger than everywhere else. Yep, it's that spot.\r\n\r\nHowever, at The Wall, bigger clearly isn't always better. Often, The Wall is just one solid, closed-out wall. On smaller days, this 2.5-mile stretch of sand is the best-shaped wave around. With the peanut gallery watching your every move from the beach, reputations are made and broken every day here. When the wind's cranking offshore, the locals all hunker down under the \"cement tube,\" basking in the sun and tossing rocks as the show unfolds in sand-sucking barrels. As you can imagine, this isn't the easiest spot to rock up to out of nowhere and expect to surf under the radar.",
+            "hazards": "",
+            "relatedArticleId": null,
+            "status": "DRAFT",
+            "boardTypes": [
+                "SHORTBOARD",
+                "FUNBOARD",
+                "LONGBOARD",
+                "FISH",
+                "BODYBOARD"
+            ]
+        },
+        "legacyId": 5131,
+        "legacyRegionId": 20897,
+        "sds": false
+    },
+    "forecast": {
+        "note": null,
+        "conditions": {
+            "human": true,
+            "value": "FAIR",
+            "expired": false,
+            "sortableCondition": 3
+        },
+        "wind": {
+            "speed": 8,
+            "direction": 277.39
+        },
+        "waveHeight": {
+            "human": true,
+            "min": 2,
+            "max": 3,
+            "occasional": null,
+            "humanRelation": "Thigh to waist high",
+            "plus": false
+        },
+        "tide": {
+            "previous": {
+                "type": "HIGH",
+                "height": 8.1,
+                "timestamp": 1608631380,
+                "utcOffset": -5
+            },
+            "current": {
+                "type": "NORMAL",
+                "height": 1.9,
+                "timestamp": 1608649070,
+                "utcOffset": -5
+            },
+            "next": {
+                "type": "LOW",
+                "height": 1.4,
+                "timestamp": 1608653280,
+                "utcOffset": -5
+            }
+        },
+        "waterTemp": {
+            "min": 41,
+            "max": 43
+        },
+        "weather": {
+            "temperature": 34,
+            "condition": "CLEAR_NO_RAIN"
+        },
+        "swells": [
+            {
+                "height": 2,
+                "direction": 153.28,
+                "period": 8,
+                "directionMin": 146.25
+            },
+            {
+                "height": 0,
+                "direction": 0,
+                "period": 0,
+                "directionMin": 0
+            },
+            {
+                "height": 1.6,
+                "direction": 81.56,
+                "period": 12,
+                "directionMin": 77.34
+            },
+            {
+                "height": 0,
+                "direction": 0,
+                "period": 0,
+                "directionMin": 0
+            },
+            {
+                "height": 0,
+                "direction": 0,
+                "period": 0,
+                "directionMin": 0
+            },
+            {
+                "height": 0,
+                "direction": 0,
+                "period": 0,
+                "directionMin": 0
+            }
+        ]
+    },
+    "report": {
+        "timestamp": 1608635655,
+        "forecaster": {
+            "name": "Rick Huegi",
+            "iconUrl": "https://www.gravatar.com/avatar/662725436ff7cbe1c5bd6493c88604e4?d=mm",
+            "title": "Mid Atlantic/New England Reports"
+        },
+        "body": "<p><strong>New Hampshire AM Surf Report:<br>\n</strong>Small SE swell lingers this morning with most spots checking in the thigh to waist high range with stomach high sets. Conditions are clean with WNW winds around 10mph. The surf is looking small but surfable with fair rideability. A lot of water early at report time but the tide is on the way out which will help rideability. High tide was at 5:00am.</p>\n<p><br></p>\n<p><strong>Short Term Forecast: &nbsp;&nbsp; <br>\n</strong>Look for new SE swell to mix in with lingering E swell over the afternoon with 2-3' waves. Winds remain offshore keeping conditions clean and fair. Rideability best around the mid to low tides. Low tide is at 11:30am with another high tide at 5:30pm.</p>"
+    }
+}

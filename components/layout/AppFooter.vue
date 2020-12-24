@@ -3,7 +3,7 @@
     <div class="content has-text-centered">
       <div
         v-if="waves"
-        class="content has-text-centered has-white-bg footer-card"
+        class="content has-text-centered has-silver-sand-light-bg footer-card"
       >
         <p>
           <strong>Surf Report @ {{ waves.spot.name }}</strong>
@@ -46,6 +46,12 @@ export default {
   data() {
     return {
       waves: {},
+    }
+  },
+  activated() {
+    // Call fetch again if last fetch more than 30 sec ago
+    if (this.$fetchState.timestamp <= Date.now() - 30000) {
+      this.$fetch()
     }
   },
 }

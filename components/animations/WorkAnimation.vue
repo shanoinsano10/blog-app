@@ -53,7 +53,7 @@ export default {
           site: 'https://sonaphi.com',
           src: 'sonaphi',
           desc:
-            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have led product management for the clinical platform and built multiple application versions for user testing.',
+            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have supported product management for the clinical platform and built multiple application versions for user testing.',
         },
         {
           name: 'Tattoo Studio',

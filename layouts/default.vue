@@ -29,6 +29,13 @@
           exact-active-class="is-active"
           >Work</b-navbar-item
         >
+        <!-- <b-navbar-item
+          tag="router-link"
+          :to="'/sandbox'"
+          class="navbar-item"
+          exact-active-class="is-active"
+          >Sandbox</b-navbar-item
+        > -->
       </template>
     </b-navbar>
 
@@ -47,7 +54,13 @@ export default {
   },
   head() {
     return {
-      title: `Shane Earley | ${this.$route.name === 'index' ? 'Home' : 'Work'}`,
+      title: `Shane Earley | ${
+        this.$route.name === 'index'
+          ? 'Home'
+          : this.$route.name === 'work'
+          ? 'Work'
+          : 'Sandbox'
+      }`,
     }
   },
 }
@@ -99,6 +112,9 @@ html {
 }
 .has-silver-sand-bg {
   background: #aebbc1;
+}
+.has-silver-sand-light-bg {
+  background: rgba(255, 255, 255, 0.25);
 }
 .has-yellow-crayola-bg {
   background: #fff07c;

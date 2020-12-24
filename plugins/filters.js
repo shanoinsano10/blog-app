@@ -1,7 +1,10 @@
 import Vue from 'vue'
 
 Vue.filter('TitleCase', (value) => {
-  return value.toLowerCase().replace(/(?:^|\s|-)\S/g, (x) => x.toUpperCase())
+  return value
+    .replace(/_/g, ' ')
+    .toLowerCase()
+    .replace(/(?:^|\s|-)\S/g, (x) => x.toUpperCase())
 })
 
 Vue.filter('CardinalDirection', (value) => {

@@ -130,8 +130,16 @@ import ContactForm from '~/components/modals/ContactForm.vue'
 export default {
   name: 'WorkPage',
   components: {},
+  async fetch() {
+    this.waves = await fetch(
+      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
+    ).then((res) => res.json())
+    this.$store.commit('setWaves', this.waves)
+  },
   data() {
     return {
+      waves: {},
+      activeTab: 0,
       workLogos: [
         {
           name: 'Consensus Networks',
@@ -139,7 +147,7 @@ export default {
           site: 'https://consensusnetworks.com/',
           src: 'consensus',
           desc:
-            ' builds advanced medical supply chain tools using Internet of Things, machine learning and blockchain. I have lead development for their healthcare enterprise resource planning software.',
+            ' builds advanced medical supply chain tools using Internet of Things, machine learning and blockchain. I have led development for their healthcare enterprise resource planning software.',
         },
         {
           name: 'Fundmazing',
@@ -182,6 +190,12 @@ export default {
             ' is using advanced sensors to proactively monitor conditions like heart failure. I led product management and developed core algorithms for the first demoable prototype.',
         },
       ],
+    }
+  },
+  activated() {
+    // Call fetch again if last fetch more than 30 sec ago
+    if (this.$fetchState.timestamp <= Date.now() - 30000) {
+      this.$fetch()
     }
   },
   methods: {

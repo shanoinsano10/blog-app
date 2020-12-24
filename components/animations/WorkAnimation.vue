@@ -29,7 +29,7 @@ export default {
           site: 'https://consensusnetworks.com/',
           src: 'consensus',
           desc:
-            ' builds advanced medical supply chain tools using Internet of Things, machine learning and blockchain. I have lead development for their healthcare enterprise resource planning software.',
+            ' builds advanced medical supply chain tools using Internet of Things, machine learning and blockchain. I have led development for their healthcare enterprise resource planning software.',
         },
         {
           name: 'Fundmazing',

@@ -42,11 +42,11 @@ export default {
       activeTab: 0,
     }
   },
-  activated() {
-    // Call fetch again if last fetch more than 30 sec ago
-    if (this.$fetchState.timestamp <= Date.now() - 30000) {
-      this.$fetch()
-    }
+  async mounted() {
+    this.waves = await fetch(
+      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
+    ).then((res) => res.json())
+    this.$store.commit('setWaves', this.waves)
   },
 }
 </script>

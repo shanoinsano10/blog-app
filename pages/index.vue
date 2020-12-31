@@ -24,7 +24,7 @@
                   <article
                     class="tile is-child padded-article has-transparent-bg"
                   >
-                    <figure class="image is-1by1">
+                    <figure class="image is-1by1 has-white-box-shadow">
                       <img src="~/assets/logo-colors.svg" />
                     </figure>
                   </article>

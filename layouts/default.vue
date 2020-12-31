@@ -85,12 +85,17 @@ html {
 .footer-icon path {
   fill: #226699;
 }
+.has-white-box-shadow {
+  z-index: 1000;
+  border-radius: 50%;
+  box-shadow: 0 0 500px #fff; /* outer white */
+}
 .has-white-blue-gradient-bg {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(85, 172, 238, 1) 100%
+    rgba(85, 172, 238, 1) 75%
   );
 }
 .has-yellow-orange-gradient-bg {

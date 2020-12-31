@@ -58,6 +58,7 @@
 </template>
 <style scoped>
 .clouds {
+  z-index: 2000;
   opacity: 0.5;
   position: absolute;
 }

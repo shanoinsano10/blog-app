@@ -152,7 +152,7 @@ export default {
         {
           name: 'Fundmazing',
           color: '#ED3A4C',
-          site: '',
+          site: 'https://fundmazing.online',
           src: 'fundmazing',
           desc:
             ' connects students and product distributors online to streamline school fundraising events. I have developed core features for the platform including payment handling from front to back.',

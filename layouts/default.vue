@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <b-navbar :close-on-click="true" spaced class="is-blue-jeans">
+    <b-navbar fixed-top :close-on-click="true" spaced class="is-blue-jeans">
       <template slot="brand">
         <b-navbar-item
           ref="navbar"
@@ -70,6 +70,11 @@ export default {
 html {
   background-color: #55acee !important;
 }
+
+nav.navbar.is-fixed-top {
+  z-index: 3000 !important;
+}
+
 .navbar-logo-item {
   background: transparent !important;
 }
@@ -88,7 +93,7 @@ html {
 .has-white-box-shadow {
   z-index: 1000;
   border-radius: 50%;
-  box-shadow: 0 0 500px #fff; /* outer white */
+  box-shadow: 0 250px 500px #fff; /* outer white */
 }
 .has-white-blue-gradient-bg {
   background: rgb(255, 255, 255);

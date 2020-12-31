@@ -12,8 +12,8 @@
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with intentionally
-                    driven people and businesses.
+                    Hampshire who enjoys developing products with purpose driven
+                    people and businesses.
                   </p>
                 </div>
               </article>
@@ -162,11 +162,11 @@ export default {
       waves: {},
     }
   },
-  async mounted() {
-    this.waves = await fetch(
-      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
-    ).then((res) => res.json())
-    this.$store.commit('setWaves', this.waves)
+  activated() {
+    // Call fetch again if last fetch more than 30 sec ago
+    if (this.$fetchState.timestamp <= Date.now() - 30000) {
+      this.$fetch()
+    }
   },
   methods: {
     cardModal() {

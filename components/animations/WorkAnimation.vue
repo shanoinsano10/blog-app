@@ -66,7 +66,8 @@ export default {
         {
           name: 'Vital View',
           color: '#52C3D6',
-          site: '',
+          site:
+            'https://ideacenter.nd.edu/news-events/news/the-idea-center-deploys-funding-to-advance-the-development-of-nascent-technologies/',
           src: 'vitalview',
           desc:
             ' is using advanced sensors to proactively monitor conditions like heart failure. I led product management and developed core algorithms for the first demoable prototype.',

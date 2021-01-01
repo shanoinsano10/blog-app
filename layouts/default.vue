@@ -128,6 +128,9 @@ nav.navbar.is-fixed-top {
 .has-silver-sand-bg {
   background: #aebbc1;
 }
+.has-text-sapphire-blue {
+  color: #226699;
+}
 .has-white-border {
   border: 1px solid white;
   border-radius: 4px;

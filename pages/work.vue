@@ -95,8 +95,8 @@
             <div class="tile is-parent">
               <article class="tile is-child padded-article is-yellow-crayola">
                 <div class="content">
-                  <p class="title">Say hello.</p>
-                  <p class="subtitle">
+                  <p class="title has-text-sapphire-blue">Say hello.</p>
+                  <p class="subtitle has-text-sapphire-blue">
                     I would love to hear about your project.
                   </p>
                   <div class="content">
@@ -105,7 +105,7 @@
                     >
                       <b-button
                         size="is-medium"
-                        class="is-dark"
+                        class="is-sapphire-blue"
                         outlined
                         icon-left="envelope"
                         @click="cardModal()"

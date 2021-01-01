@@ -15,11 +15,15 @@
         </div>
       </section>
     </div>
-    <div class="has-blue-jeans-bg">
-      <section
-        class="section has-sapphire-blue-bg section-concave-down"
-      ></section>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C40 0 60 0 100 100 Z" />
+    </svg>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
         <section v-for="(currentLogo, i) in workLogos" :key="i" class="section">
@@ -66,11 +70,15 @@
         </section>
       </div>
     </div>
-    <div class="has-yellow-crayola-bg">
-      <section
-        class="section has-sapphire-blue-bg section-concave-up"
-      ></section>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C40 0 60 0 100 100 Z" />
+    </svg>
     <div class="has-yellow-crayola-bg">
       <section class="section">
         <div class="container">
@@ -236,5 +244,28 @@ export default {
 .work-image img {
   height: 100%;
   width: 100%;
+}
+
+svg:nth-of-type(1) {
+  height: 3em;
+  background: #55acee;
+  display: block;
+}
+
+svg:nth-of-type(1) path {
+  fill: #226699;
+  stroke: #226699;
+}
+
+svg:nth-of-type(2) {
+  transform: rotate(180deg);
+  height: 3em;
+  background: #fff07c;
+  display: block;
+}
+
+svg:nth-of-type(2) path {
+  fill: #226699;
+  stroke: #226699;
 }
 </style>

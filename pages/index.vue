@@ -57,9 +57,9 @@
                 <div class="content">
                   <p class="title has-text-white">How can I help?</p>
                   <p class="subtitle has-text-white">
-                    I mainly develop full-stack apps, but I also build things
-                    from algorithms to websites. Along the way, I've been lucky
-                    to work with some great entrepreneurs and companies.
+                    I mainly develop applications, but I also build things from
+                    algorithms to websites. Along the way, I've been lucky to
+                    work with some great entrepreneurs and companies.
                   </p>
                   <b-button
                     size="is-medium"
@@ -79,11 +79,15 @@
         </div>
       </section>
     </div>
-    <div class="has-yellow-crayola-bg">
-      <section
-        class="section has-sapphire-blue-bg section-concave-up"
-      ></section>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C40 0 60 0 100 100 Z" />
+    </svg>
     <div class="has-yellow-crayola-bg">
       <section class="section">
         <div class="container">
@@ -180,3 +184,17 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+svg {
+  transform: rotate(180deg);
+  height: 3em;
+  background: #fff07c;
+  display: block;
+}
+
+svg path {
+  fill: #226699;
+  stroke: #226699;
+}
+</style>

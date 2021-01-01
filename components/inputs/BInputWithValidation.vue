@@ -27,7 +27,7 @@ export default {
   props: {
     vid: {
       type: String,
-      required: true,
+      default: '',
     },
     rules: {
       type: [Object, String],

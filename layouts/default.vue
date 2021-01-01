@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <b-navbar fixed-top :close-on-click="true" spaced class="is-blue-jeans">
+    <b-navbar :close-on-click="true" spaced class="is-blue-jeans">
       <template slot="brand">
         <b-navbar-item
           ref="navbar"
@@ -71,6 +71,11 @@ html {
   background-color: #55acee !important;
 }
 
+.main-content {
+  position: relative;
+  overflow-x: hidden;
+}
+
 nav.navbar.is-fixed-top {
   z-index: 3000 !important;
 }
@@ -123,8 +128,9 @@ nav.navbar.is-fixed-top {
 .has-silver-sand-bg {
   background: #aebbc1;
 }
-.has-silver-sand-light-bg {
-  background: rgba(255, 255, 255, 0.25);
+.has-white-border {
+  border: 1px solid white;
+  border-radius: 4px;
 }
 .has-yellow-crayola-bg {
   background: #fff07c;

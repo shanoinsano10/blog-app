@@ -1,12 +1,14 @@
 <template>
-  <footer class="footer has-silver-sand-bg">
+  <footer class="footer has-blue-jeans-bg has-text-white">
     <div class="content has-text-centered">
       <div
         v-if="waves"
-        class="content has-text-centered has-silver-sand-light-bg footer-card"
+        class="content has-text-centered has-white-border footer-card"
       >
         <p>
-          <strong>Surf Report @ {{ waves.spot.name }}</strong>
+          <strong class="has-text-white"
+            >Surf Report @ {{ waves.spot.name }}</strong
+          >
         </p>
         <p>{{ waves.forecast.conditions.value | TitleCase }} Conditions</p>
         <p class="has-text-with-icons">
@@ -30,14 +32,22 @@
       </div>
     </div>
     <div class="content has-text-centered">
-      <p>Built with love in New Hampshire</p>
-      <p>© 2020 Shane Earley</p>
+      <p>♡ Built with love in New Hampshire.</p>
+      <p>
+        © Copyright {{ year }} Shane Earley. All rights reserved. Various
+        trademarks held by their respective owners.
+      </p>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    }
+  },
   computed: {
     waves() {
       return this.$store.state.waves
@@ -47,6 +57,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p {
+  font-size: 0.75em;
+}
 .footer-card {
   max-width: 600px;
   border-radius: 4px;
@@ -59,11 +72,6 @@ export default {
   justify-content: center;
   .icon {
     margin: 0 0.3em;
-  }
-}
-@media only screen and (max-width: 568px) {
-  p {
-    font-size: 0.75em;
   }
 }
 </style>

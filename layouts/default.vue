@@ -52,6 +52,12 @@ export default {
   data() {
     return {}
   },
+  async mounted() {
+    const waves = await fetch(
+      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
+    ).then((res) => res.json())
+    this.$store.commit('setWaves', waves)
+  },
   head() {
     return {
       title: `Shane Earley | ${

@@ -32,15 +32,8 @@ export default {
   },
   data() {
     return {
-      waves: {},
       activeTab: 0,
     }
-  },
-  async mounted() {
-    this.waves = await fetch(
-      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
-    ).then((res) => res.json())
-    this.$store.commit('setWaves', this.waves)
   },
 }
 </script>

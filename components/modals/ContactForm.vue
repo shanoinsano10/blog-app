@@ -60,7 +60,7 @@
 
 <script>
 import { ValidationObserver } from 'vee-validate'
-import BInputWithValidation from '~/components/inputs/BInputWithValidation'
+import BInputWithValidation from '@/components/inputs/BInputWithValidation'
 
 export default {
   name: 'BuefyForm',

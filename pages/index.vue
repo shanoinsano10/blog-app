@@ -8,12 +8,12 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content">
                   <p class="title is-1 has-text-white">
-                    Building waves of impact.
+                    Small waves of impact.
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with purpose driven
-                    people and businesses.
+                    Hampshire who enjoys developing digital products with
+                    purpose-driven startups and local businesses.
                   </p>
                 </div>
               </article>
@@ -25,7 +25,7 @@
                     class="tile is-child padded-article has-transparent-bg"
                   >
                     <figure class="image is-1by1 has-white-box-shadow">
-                      <img src="~/assets/logo-colors.svg" />
+                      <img src="@/assets/logo-colors.svg" />
                     </figure>
                   </article>
                 </div>
@@ -57,7 +57,7 @@
                 <div class="content">
                   <p class="title has-text-white">How can I help?</p>
                   <p class="subtitle has-text-white">
-                    I mainly develop applications, but I also build things from
+                    I mainly build applications, but I also design things from
                     algorithms to websites. Along the way, I've been lucky to
                     work with some great entrepreneurs and companies.
                   </p>
@@ -143,10 +143,10 @@
 </template>
 
 <script>
-import WorkAnimation from '~/components/animations/WorkAnimation'
-import CloudsAnimation from '~/components/animations/CloudsAnimation'
-import WaveAnimation from '~/components/animations/WaveAnimation'
-import ContactForm from '~/components/modals/ContactForm'
+import WorkAnimation from '@/components/animations/WorkAnimation'
+import CloudsAnimation from '@/components/animations/CloudsAnimation'
+import WaveAnimation from '@/components/animations/WaveAnimation'
+import ContactForm from '@/components/modals/ContactForm'
 
 export default {
   name: 'HomePage',
@@ -155,22 +155,16 @@ export default {
     CloudsAnimation,
     WaveAnimation,
   },
-  async fetch() {
-    this.waves = await fetch(
-      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
-    ).then((res) => res.json())
-    this.$store.commit('setWaves', this.waves)
-  },
   data() {
     return {
       waves: {},
     }
   },
-  activated() {
-    // Call fetch again if last fetch more than 30 sec ago
-    if (this.$fetchState.timestamp <= Date.now() - 30000) {
-      this.$fetch()
-    }
+  async mounted() {
+    this.waves = await fetch(
+      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
+    ).then((res) => res.json())
+    this.$store.commit('setWaves', this.waves)
   },
   methods: {
     cardModal() {

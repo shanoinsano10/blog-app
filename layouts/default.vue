@@ -8,7 +8,7 @@
           :to="{ path: '/' }"
           class="navbar-logo-item"
         >
-          <img src="~/assets/logo-white.svg" alt="Wave logo icon" />
+          <img src="@/assets/logo-white.svg" alt="Wave logo icon" />
           <h4 class="title is-4 has-text-white has-margin-before">
             Shane Earley
           </h4>
@@ -67,10 +67,6 @@ export default {
 </script>
 
 <style lang="scss">
-html {
-  background-color: #55acee !important;
-}
-
 .main-content {
   position: relative;
   overflow-x: hidden;

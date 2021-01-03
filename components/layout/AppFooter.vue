@@ -1,8 +1,8 @@
 <template>
-  <footer class="footer has-blue-jeans-bg has-text-white">
+  <footer class="footer has-sapphire-blue-bg has-text-white">
     <div class="content has-text-centered">
       <div
-        v-if="waves"
+        v-if="waves && waves.spot"
         class="content has-text-centered has-white-border footer-card"
       >
         <p>

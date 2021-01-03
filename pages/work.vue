@@ -26,7 +26,7 @@
     </svg>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
-        <section v-for="(currentLogo, i) in workLogos" :key="i" class="section">
+        <section v-for="(currentLogo, i) in workData" :key="i" class="section">
           <div class="container">
             <div class="tile">
               <div class="tile">
@@ -38,7 +38,7 @@
                       <figure class="image work-image">
                         <img
                           class="work-logo"
-                          :src="require(`~/assets/${currentLogo.src}-logo.svg`)"
+                          :src="require(`@/assets/${currentLogo.src}-logo.svg`)"
                         />
                       </figure>
                     </article>
@@ -134,21 +134,17 @@
 </template>
 
 <script>
-import ContactForm from '~/components/modals/ContactForm.vue'
+import WorkDataMixin from '@/mixins/WorkDataMixin'
+import ContactForm from '@/components/modals/ContactForm.vue'
 export default {
   name: 'WorkPage',
   components: {},
-  async fetch() {
-    this.waves = await fetch(
-      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
-    ).then((res) => res.json())
-    this.$store.commit('setWaves', this.waves)
-  },
+  mixins: [WorkDataMixin],
   data() {
     return {
       waves: {},
       activeTab: 0,
-      workLogos: [
+      workData: [
         {
           name: 'Consensus Networks',
           color: '#F06D38',
@@ -163,7 +159,7 @@ export default {
           site: 'https://fundmazing.online',
           src: 'fundmazing',
           desc:
-            ' connects students and product distributors online to streamline school fundraising events. I have developed core features for the platform including payment handling from front to back.',
+            ' connects students and product distributors online to streamline school fundraising events. I have developed essential features for the platform including payment handling from front to back.',
         },
         {
           name: 'Otter Therapies',
@@ -179,7 +175,7 @@ export default {
           site: 'https://sonaphi.com',
           src: 'sonaphi',
           desc:
-            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have supported product management for the clinical platform and built multiple application versions for user testing.',
+            ' is entering clinical trials for a voice-based COVID-19 screening tool. I have supported product management for the clinical platform and built multiple application prototypes for user testing.',
         },
         {
           name: 'Tattoo Studio',
@@ -187,7 +183,7 @@ export default {
           site: 'https://tattoostudiopro.com/',
           src: 'tattoostudio',
           desc:
-            ' streamlines the management of customers release forms and appointments for studio owners. I have developed core features including appointments scheduling and customer reminders.',
+            ' streamlines the management of customers release forms and appointments for studio owners. I have developed product-enhancing features including appointments scheduling and customer reminders.',
         },
         {
           name: 'Vital View',
@@ -196,16 +192,16 @@ export default {
             'https://ideacenter.nd.edu/news-events/news/the-idea-center-deploys-funding-to-advance-the-development-of-nascent-technologies/',
           src: 'vitalview',
           desc:
-            ' is using advanced sensors to proactively monitor conditions like heart failure. I led product management and developed core algorithms for the first demoable prototype.',
+            ' is using advanced sensors to proactively monitor chronic conditions like heart failure, hypertension and sleep apnea. I led product management and developed core algorithms for the first demoable prototypes.',
         },
       ],
     }
   },
-  activated() {
-    // Call fetch again if last fetch more than 30 sec ago
-    if (this.$fetchState.timestamp <= Date.now() - 30000) {
-      this.$fetch()
-    }
+  async mounted() {
+    this.waves = await fetch(
+      'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
+    ).then((res) => res.json())
+    this.$store.commit('setWaves', this.waves)
   },
   methods: {
     cardModal() {

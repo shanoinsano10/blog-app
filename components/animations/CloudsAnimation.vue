@@ -120,10 +120,10 @@
 
 @keyframes move {
   from {
-    -webkit-transform: translateX(-300px);
+    left: -300px;
   }
   to {
-    -webkit-transform: translateX(calc(100vw + 300px));
+    left: calc(100vw + 300px);
   }
 }
 </style>

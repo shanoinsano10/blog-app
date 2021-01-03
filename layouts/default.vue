@@ -60,13 +60,14 @@ export default {
   },
   head() {
     return {
-      title: `Shane Earley | ${
-        this.$route.name === 'index'
-          ? 'Home'
-          : this.$route.name === 'work'
-          ? 'Work'
-          : 'Sandbox'
-      }`,
+      title: `Shane Earley | ${this.$route.name === 'index' ? 'Home' : 'Work'}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Portfolio site for Shane Earley Product Development',
+        },
+      ],
     }
   },
 }

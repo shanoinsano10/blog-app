@@ -1,5 +1,6 @@
 {
   "name": "shaneearleydev-site",
+  "description": "Portfolio site for Shane Earley Product Development",
   "version": "1.0.0",
   "private": true,
   "scripts": {

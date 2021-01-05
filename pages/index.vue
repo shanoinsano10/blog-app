@@ -8,7 +8,7 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content">
                   <p class="title is-1 has-text-white">
-                    Small waves with impact.
+                    Building waves of impact.
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New

@@ -36,10 +36,15 @@
                       class="tile has-transparent-bg work-image-article has-text-centered"
                     >
                       <figure class="image work-image">
-                        <img
-                          class="work-logo"
-                          :src="require(`@/assets/${currentLogo.src}-logo.svg`)"
-                        />
+                        <a :href="currentLogo.site" target="_blank">
+                          <img
+                            class="work-logo"
+                            :src="
+                              require(`@/assets/${currentLogo.src}-logo.svg`)
+                            "
+                            :aria-label="`The ${currentLogo.name} logo`"
+                          />
+                        </a>
                       </figure>
                     </article>
                   </div>

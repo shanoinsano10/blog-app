@@ -20,6 +20,14 @@ export default {
             ' connects students and product distributors online to streamline school fundraising events. I have developed essential features for the platform including payment handling from front to back.',
         },
         {
+          name: 'Healthcare Forward',
+          color: '#1155A5',
+          site: 'https://www.healthcare-forward.com/',
+          src: 'healthcareforward',
+          desc:
+            ' is a physician-led organization that partners with health systems to develop and deploy high value care infrastructure. I have worked on features for parsing, passing and visualizing health system data through their platform.',
+        },
+        {
           name: 'Otter Therapies',
           color: '#66D3C1',
           site: 'https://ottertherapies.com',

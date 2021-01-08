@@ -1,15 +1,21 @@
 <template>
   <figure class="image is-1by1 floating-animation">
     <img src="@/assets/laptop-white-color.svg" />
-    <transition-group name="fade" tag="span" class="workicon-container">
-      <img
+    <transition-group name="fade" tag="span">
+      <a
         v-for="i in [currentIndex]"
         :key="i"
-        :src="require(`@/assets/${currentLogo.src}-logo.svg`)"
-        :alt="`The ${currentLogo.name} logo`"
-        :aria-label="`The ${currentLogo.name} logo`"
-        class="workicon"
-      />
+        :href="currentLogo.site"
+        target="_blank"
+        class="workicon-container"
+      >
+        <img
+          :src="require(`@/assets/${currentLogo.src}-logo.svg`)"
+          :alt="`The ${currentLogo.name} logo`"
+          :aria-label="`The ${currentLogo.name} logo`"
+          class="workicon"
+        />
+      </a>
     </transition-group>
   </figure>
 </template>

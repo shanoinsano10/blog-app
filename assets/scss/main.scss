@@ -6,8 +6,8 @@ $sapphire-blue: #226699;
 $sapphire-blue-invert: findColorInvert($sapphire-blue);
 $blue-jeans: #55ACEE;
 $blue-jeans-invert: findColorInvert($blue-jeans);
-$silver-sand: #AEBBC1;
-$silver-sand-invert: findColorInvert($silver-sand);
+$cultured: #F5F5F5;
+$cultured-invert: findColorInvert($cultured);
 $yellow-crayola: #FFF07C;
 $yellow-crayola-invert: findColorInvert($yellow-crayola);
 $mandarin: #EF8354;
@@ -26,7 +26,7 @@ $colors: (
     "danger": ($danger, $danger-invert),
     "sapphire-blue": ($sapphire-blue, $sapphire-blue-invert),
     "blue-jeans": ($blue-jeans, $blue-jeans-invert),
-    "silver-sand": ($silver-sand, $silver-sand-invert),
+    "cultured": ($cultured, $cultured-invert),
     "yellow-crayola": ($yellow-crayola, $yellow-crayola-invert),
     "mandarin": ($mandarin, $mandarin-invert)
 );

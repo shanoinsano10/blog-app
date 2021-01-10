@@ -43,11 +43,11 @@ export default {
   border-radius: 4px;
 }
 .tabs ul {
-  border-bottom-color: #aebbc1 !important;
+  border-bottom-color: #F5F5F5 !important;
 }
 .tabs li a {
-  border-bottom-color: #aebbc1 !important;
-  color: #aebbc1 !important;
+  border-bottom-color: #F5F5F5 !important;
+  color: #F5F5F5 !important;
 }
 .tabs li.is-active a {
   border-bottom-color: #fff !important;

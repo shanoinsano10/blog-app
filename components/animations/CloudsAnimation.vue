@@ -69,10 +69,10 @@
   top: 5rem;
   fill: #fff;
   /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
-  -webkit-animation: move 75s linear infinite;
-  -moz-animation: move 75s linear infinite;
-  -o-animation: move 75s linear infinite;
-  animation: move 75s linear infinite;
+  -webkit-animation: move 85s linear infinite;
+  -moz-animation: move 85s linear infinite;
+  -o-animation: move 85s linear infinite;
+  animation: move 85s linear infinite;
 }
 
 .cloud2 {
@@ -80,10 +80,10 @@
   height: 300px;
   top: 10rem;
   fill: #fff;
-  -webkit-animation: move 100s linear infinite backwards;
-  -moz-animation: move 100s linear infinite backwards;
-  -o-animation: move 100s linear infinite backwards;
-  animation: move 100s linear infinite backwards;
+  -webkit-animation: move 110s linear infinite backwards;
+  -moz-animation: move 110s linear infinite backwards;
+  -o-animation: move 110s linear infinite backwards;
+  animation: move 110s linear infinite backwards;
 }
 
 .cloud3 {
@@ -91,30 +91,30 @@
   height: 100px;
   top: 15rem;
   fill: #fff;
-  -webkit-animation: move 50s linear infinite backwards;
-  -moz-animation: move 50s linear infinite backwards;
-  -o-animation: move 50s linear infinite backwards;
-  animation: move 50s linear infinite backwards;
+  -webkit-animation: move 60s linear infinite backwards;
+  -moz-animation: move 60s linear infinite backwards;
+  -o-animation: move 60s linear infinite backwards;
+  animation: move 60s linear infinite backwards;
 }
 
 @media only screen and (max-width: 768px) {
   .cloud1 {
-    -webkit-animation: move 60s linear infinite;
-    -moz-animation: move 60s linear infinite;
-    -o-animation: move 60s linear infinite;
-    animation: move 60s linear infinite;
+    -webkit-animation: move 70s linear infinite;
+    -moz-animation: move 70s linear infinite;
+    -o-animation: move 70s linear infinite;
+    animation: move 70s linear infinite;
   }
   .cloud2 {
-    -webkit-animation: move 80s linear infinite backwards;
-    -moz-animation: move 80s linear infinite backwards;
-    -o-animation: move 80s linear infinite backwards;
-    animation: move 80s linear infinite backwards;
+    -webkit-animation: move 90s linear infinite backwards;
+    -moz-animation: move 90s linear infinite backwards;
+    -o-animation: move 90s linear infinite backwards;
+    animation: move 90s linear infinite backwards;
   }
   .cloud3 {
-    -webkit-animation: move 40s linear infinite backwards;
-    -moz-animation: move 40s linear infinite backwards;
-    -o-animation: move 40s linear infinite backwards;
-    animation: move 40s linear infinite backwards;
+    -webkit-animation: move 50s linear infinite backwards;
+    -moz-animation: move 50s linear infinite backwards;
+    -o-animation: move 50s linear infinite backwards;
+    animation: move 50s linear infinite backwards;
   }
 }
 

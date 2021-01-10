@@ -59,8 +59,8 @@ export default {
   background: #226699;
 }
 
-.has-silver-sand-bg {
-  background: #aebbc1;
+.has-cultured-bg {
+  background: #f5f5f5;
 }
 
 @media (max-width: 768px) {

@@ -88,57 +88,7 @@
     >
       <path d="M0 100 C40 0 60 0 100 100 Z" />
     </svg>
-    <div class="has-yellow-crayola-bg">
-      <section class="section">
-        <div class="container">
-          <div class="tile is-ancestor has-text-centered">
-            <div class="tile is-vertical is-2 is-hidden-mobile">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article
-                    class="tile is-child notification is-yellow-crayola"
-                  ></article>
-                </div>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-yellow-crayola">
-                <div class="content">
-                  <p class="title has-text-sapphire-blue">Say hello.</p>
-                  <p class="subtitle has-text-sapphire-blue">
-                    I would love to hear about your project.
-                  </p>
-                  <div class="content">
-                    <div
-                      class="box is-shadowless has-text-centered has-yellow-crayola-bg"
-                    >
-                      <b-button
-                        size="is-medium"
-                        class="is-sapphire-blue"
-                        outlined
-                        icon-left="envelope"
-                        @click="cardModal()"
-                      >
-                        Send a message
-                      </b-button>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-vertical is-2 is-hidden-mobile">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article
-                    class="tile is-child notification is-yellow-crayola"
-                  ></article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <AppContact />
   </div>
 </template>
 
@@ -146,7 +96,7 @@
 import WorkAnimation from '@/components/animations/WorkAnimation'
 import CloudsAnimation from '@/components/animations/CloudsAnimation'
 import WaveAnimation from '@/components/animations/WaveAnimation'
-import ContactForm from '@/components/modals/ContactForm'
+import AppContact from '@/components/layout/AppContact'
 
 export default {
   name: 'HomePage',
@@ -154,19 +104,10 @@ export default {
     WorkAnimation,
     CloudsAnimation,
     WaveAnimation,
+    AppContact,
   },
   data() {
     return {}
-  },
-  methods: {
-    cardModal() {
-      this.$buefy.modal.open({
-        parent: this,
-        component: ContactForm,
-        hasModalCard: true,
-        trapFocus: true,
-      })
-    },
   },
 }
 </script>
@@ -174,8 +115,8 @@ export default {
 <style lang="scss" scoped>
 svg {
   transform: rotate(180deg);
-  height: 3em;
-  background: #fff07c;
+  height: 2em;
+  background: #f5f5f5;
   display: block;
 }
 

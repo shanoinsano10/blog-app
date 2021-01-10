@@ -8,12 +8,12 @@
 .wave-animation {
   height: 198px;
   background: url('../../assets/wave-sketch.svg') repeat-x;
-  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 25s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 @media only screen and (max-width: 768px) {
   .wave-animation {
-    animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
 }
 @keyframes wave {

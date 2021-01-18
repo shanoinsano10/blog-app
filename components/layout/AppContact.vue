@@ -35,6 +35,32 @@
                     </b-button>
                   </div>
                 </div>
+                <div class="content has-text-sapphire-blue">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/shaneearley10/"
+                    class="is-primary"
+                  >
+                    <b-icon class="link-icon" pack="fab" icon="linkedin" />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/shanejearley"
+                    class="is-primary"
+                  >
+                    <b-icon class="link-icon" pack="fab" icon="github" />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/shane.earley.79/"
+                    class="is-primary"
+                  >
+                    <b-icon class="link-icon" pack="fab" icon="facebook" />
+                  </a>
+                </div>
               </div>
             </article>
           </div>

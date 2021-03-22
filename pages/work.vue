@@ -108,6 +108,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.section {
+  max-width: 1250px;
+  margin: auto;
+}
+
 .work-wrapper {
   padding: 1rem;
 }

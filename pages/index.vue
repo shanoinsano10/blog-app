@@ -8,12 +8,12 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content">
                   <p class="title is-1 has-text-white">
-                    Building waves of impact.
+                    Let's build waves of impact.
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing digital products with
-                    purpose-driven startups and local businesses.
+                    Hampshire who enjoys developing products with
+                    startups and local businesses that make our lives better.
                   </p>
                 </div>
               </article>
@@ -113,6 +113,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.section {
+  max-width: 1250px;
+  margin: auto;
+}
+
 svg {
   transform: rotate(180deg);
   height: 2em;

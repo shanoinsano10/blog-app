@@ -1,43 +1,47 @@
 <template>
   <div id="layout">
-    <b-navbar :close-on-click="true" spaced class="is-blue-jeans">
-      <template slot="brand">
-        <b-navbar-item
-          ref="navbar"
-          tag="router-link"
-          :to="{ path: '/' }"
-          class="navbar-logo-item"
-        >
-          <img src="@/assets/logo-white.svg" alt="Wave logo icon" />
-          <h4 class="title is-4 has-text-white has-margin-before">
-            Shane Earley
-          </h4>
-        </b-navbar-item>
-      </template>
-      <template slot="end">
-        <b-navbar-item
-          tag="router-link"
-          :to="'/'"
-          class="navbar-item"
-          exact-active-class="is-active"
-          >Home</b-navbar-item
-        >
-        <b-navbar-item
-          tag="router-link"
-          :to="'/work'"
-          class="navbar-item"
-          exact-active-class="is-active"
-          >Work</b-navbar-item
-        >
-        <!-- <b-navbar-item
+    <div class="navbar-outer has-blue-jeans-bg">
+      <div class="navbar-inner">
+        <b-navbar :close-on-click="true" spaced class="is-blue-jeans">
+          <template slot="brand">
+            <b-navbar-item
+              ref="navbar"
+              tag="router-link"
+              :to="{ path: '/' }"
+              class="navbar-logo-item"
+            >
+              <img src="@/assets/logo-white.svg" alt="Wave logo icon" />
+              <h4 class="title is-4 has-text-white has-margin-before">
+                Shane Earley
+              </h4>
+            </b-navbar-item>
+          </template>
+          <template slot="end">
+            <b-navbar-item
+              tag="router-link"
+              :to="'/'"
+              class="navbar-item"
+              exact-active-class="is-active"
+              >Home</b-navbar-item
+            >
+            <b-navbar-item
+              tag="router-link"
+              :to="'/work'"
+              class="navbar-item"
+              exact-active-class="is-active"
+              >Work</b-navbar-item
+            >
+            <!-- <b-navbar-item
           tag="router-link"
           :to="'/sandbox'"
           class="navbar-item"
           exact-active-class="is-active"
           >Sandbox</b-navbar-item
         > -->
-      </template>
-    </b-navbar>
+          </template>
+        </b-navbar>
+      </div>
+    </div>
 
     <section class="main-content">
       <nuxt />
@@ -74,6 +78,11 @@ export default {
 </script>
 
 <style lang="scss">
+.navbar-inner {
+  max-width: 1250px;
+  margin: auto;
+}
+
 .main-content {
   position: relative;
   overflow-x: hidden;

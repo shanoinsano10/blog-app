@@ -114,7 +114,7 @@ nav.navbar.is-fixed-top {
 .has-white-box-shadow {
   z-index: 1000;
   border-radius: 50%;
-  box-shadow: 0 250px 500px #fff; /* outer white */
+  box-shadow: 0 125px 250px #fff; /* outer white */
 }
 .has-white-blue-gradient-bg {
   background: rgb(255, 255, 255);

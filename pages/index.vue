@@ -12,8 +12,8 @@
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with businesses
-                    that seek to make our lives better.
+                    Hampshire who enjoys developing products with people that
+                    seek to make our lives better.
                   </p>
                 </div>
               </article>
@@ -57,9 +57,9 @@
                 <div class="content">
                   <p class="title has-text-white">How can I help?</p>
                   <p class="subtitle has-text-white">
-                    I mainly build applications, but I also design things from
-                    algorithms to websites. Along the way, I've been lucky to
-                    work with some great entrepreneurs and companies.
+                    I build applications for the modern web using tools from IoT
+                    to analytics to design. I've been lucky to work with some
+                    great entrepreneurs along the way.
                   </p>
                   <b-button
                     size="is-medium"

@@ -12,8 +12,8 @@
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with
-                    startups and local businesses that make our lives better.
+                    Hampshire who enjoys developing products with businesses
+                    that seek to make our lives better.
                   </p>
                 </div>
               </article>
@@ -113,11 +113,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section {
-  max-width: 1250px;
-  margin: auto;
-}
-
 svg {
   transform: rotate(180deg);
   height: 2em;

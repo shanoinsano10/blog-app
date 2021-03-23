@@ -26,53 +26,56 @@
     </svg>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
-        <section v-for="(currentLogo, i) in workData" :key="i" class="section">
-          <div class="container">
-            <div class="tile">
+        <div v-for="(currentLogo, i) in workData" :key="i">
+          <section class="section">
+            <div class="container work-container">
               <div class="tile">
                 <div class="tile">
                   <div class="tile">
-                    <article
-                      class="tile has-transparent-bg work-image-article has-text-centered"
-                    >
-                      <figure class="image work-image">
-                        <a :href="currentLogo.site" target="_blank">
-                          <img
-                            class="work-logo"
-                            :src="
-                              require(`@/assets/${currentLogo.src}-logo.svg`)
-                            "
-                            :aria-label="`The ${currentLogo.name} logo`"
-                          />
-                        </a>
-                      </figure>
-                    </article>
+                    <div class="tile">
+                      <article
+                        class="tile has-transparent-bg work-image-article has-text-centered"
+                      >
+                        <figure class="image work-image">
+                          <a :href="currentLogo.site" target="_blank">
+                            <img
+                              class="work-logo"
+                              :src="
+                                require(`@/assets/${currentLogo.src}-logo.svg`)
+                              "
+                              :aria-label="`The ${currentLogo.name} logo`"
+                            />
+                          </a>
+                        </figure>
+                      </article>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="tile">
               <div class="tile">
-                <article class="tile has-transparent-bg">
-                  <div class="content has-text-centered">
-                    <p class="subtitle">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        :href="currentLogo.site"
-                        class="is-primary"
-                        :style="`color: ${currentLogo.color}; text-decoration: none;`"
-                      >
-                        <b>{{ currentLogo.name }}</b>
-                      </a>
-                      {{ currentLogo.desc }}
-                    </p>
-                  </div>
-                </article>
+                <div class="tile">
+                  <article class="tile has-transparent-bg">
+                    <div class="content has-text-centered">
+                      <p class="subtitle">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          :href="currentLogo.site"
+                          class="is-primary"
+                          :style="`color: ${currentLogo.color}; text-decoration: none;`"
+                        >
+                          <b>{{ currentLogo.name }}</b>
+                        </a>
+                        {{ currentLogo.desc }}
+                      </p>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <hr />
+        </div>
       </div>
     </div>
     <svg
@@ -108,32 +111,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section {
-  max-width: 1250px;
+hr {
+  border-top: 8px solid #f5f5f5;
+  border-radius: 4px;
+  width: 90%;
   margin: auto;
 }
 
 .work-wrapper {
   padding: 1rem;
 }
+
 .work-card {
   border-radius: 4px;
   max-width: 800px;
   margin: auto;
-  .section {
-    border-bottom: 1px solid #f5f5f5;
-    width: 90%;
-    margin: auto;
-  }
 }
+
+.work-container {
+  padding: 4rem 2rem;
+}
+
 .work-image-article {
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
+
 .work-image {
   max-width: 256px;
   width: 100%;
   margin: auto;
 }
+
 .work-image img {
   height: 100%;
   width: 100%;

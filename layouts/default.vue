@@ -78,6 +78,10 @@ export default {
 </script>
 
 <style lang="scss">
+.section {
+  max-width: 1250px;
+  margin: auto;
+}
 .navbar-inner {
   max-width: 1250px;
   margin: auto;

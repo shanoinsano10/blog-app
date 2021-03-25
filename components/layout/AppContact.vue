@@ -39,7 +39,7 @@
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/shaneearley10/"
+                    href="https://www.linkedin.com/in/shanejearley"
                     class="is-primary"
                   >
                     <b-icon class="link-icon" pack="fab" icon="linkedin" />
@@ -55,10 +55,10 @@
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.facebook.com/shane.earley.79/"
+                    href="https://twitter.com/ShaneJEarley"
                     class="is-primary"
                   >
-                    <b-icon class="link-icon" pack="fab" icon="facebook" />
+                    <b-icon class="link-icon" pack="fab" icon="twitter" />
                   </a>
                 </div>
               </div>

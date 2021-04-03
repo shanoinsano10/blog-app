@@ -12,7 +12,7 @@
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with people that
+                    Hampshire who enjoys developing products with people who
                     seek to make our lives better.
                   </p>
                 </div>

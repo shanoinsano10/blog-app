@@ -9,7 +9,7 @@ export default {
           site: 'https://consensusnetworks.com/',
           src: 'consensus',
           desc:
-            ' augments medical supply chains with robust predictability and traceability using Internet of Things, machine learning and blockchain. I am leading development of their integrated HealthNet platform.',
+            ' augments medical supply chains and health systems with realtime, trusted and actionable data – ensuring product quality and availability in response to public health demands. I am leading development of their integrated HealthNet platform.',
         },
         {
           name: 'Fundmazing',
@@ -17,7 +17,7 @@ export default {
           site: 'https://fundmazing.online',
           src: 'fundmazing',
           desc:
-            ' connects students and product distributors online to streamline school fundraising events. I developed a payment handling feature for the application. I also built a landing page for the company.',
+            ' connects students and product distributors online to streamline school fundraising events. I developed a payment handling feature for the application and a company landing page.',
         },
         {
           name: 'Healthcare Forward',

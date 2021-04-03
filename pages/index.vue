@@ -58,8 +58,8 @@
                   <p class="title has-text-white">How can I help?</p>
                   <p class="subtitle has-text-white">
                     I build applications for the modern web using tools from IoT
-                    to analytics to design. I've been lucky to work with some
-                    great entrepreneurs along the way.
+                    to analytics to design. I've been very lucky to work with
+                    some great teams along the way.
                   </p>
                   <b-button
                     size="is-medium"

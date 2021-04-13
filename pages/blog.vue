@@ -7,7 +7,7 @@
             <div class="tile is-parent">
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content has-text-centered">
-                  <p class="title is-1 has-text-white">Some recent work.</p>
+                  <p class="title is-1 has-text-white">Some recent thoughts.</p>
                 </div>
               </article>
             </div>
@@ -26,50 +26,16 @@
     </svg>
     <div class="has-sapphire-blue-bg work-wrapper">
       <div class="has-white-bg work-card">
-        <div v-for="(currentLogo, i) in workData" :key="i">
+        <div>
           <section class="section">
             <div class="container work-container">
-              <div class="tile">
-                <div class="tile">
-                  <div class="tile">
-                    <div class="tile">
-                      <article
-                        class="tile has-transparent-bg work-image-article has-text-centered"
-                      >
-                        <figure class="image work-image">
-                          <a :href="currentLogo.site" target="_blank">
-                            <img
-                              class="work-logo"
-                              :src="
-                                require(`@/assets/${currentLogo.src}-logo.svg`)
-                              "
-                              :aria-label="`The ${currentLogo.name} logo`"
-                            />
-                          </a>
-                        </figure>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="tile">
                 <div class="tile">
                   <article
                     class="tile has-text-left has-cultured-bg padded-article rounded-article"
                   >
                     <div class="content">
-                      <p class="subtitle">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          :href="currentLogo.site"
-                          class="is-primary"
-                          :style="`color: ${currentLogo.color}; text-decoration: none;`"
-                        >
-                          <b>{{ currentLogo.name }}</b>
-                        </a>
-                        {{ currentLogo.desc }}
-                      </p>
+                      <p class="subtitle">Coming soon...</p>
                     </div>
                   </article>
                 </div>

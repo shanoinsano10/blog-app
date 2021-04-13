@@ -31,13 +31,13 @@
               exact-active-class="is-active"
               >Work</b-navbar-item
             >
-            <!-- <b-navbar-item
-          tag="router-link"
-          :to="'/sandbox'"
-          class="navbar-item"
-          exact-active-class="is-active"
-          >Sandbox</b-navbar-item
-        > -->
+            <b-navbar-item
+              tag="router-link"
+              :to="'/blog'"
+              class="navbar-item"
+              exact-active-class="is-active"
+              >Blog</b-navbar-item
+            >
           </template>
         </b-navbar>
       </div>
@@ -56,6 +56,15 @@ export default {
   data() {
     return {}
   },
+  computed: {
+    title() {
+      return this.$route.name === 'index'
+        ? 'Home'
+        : this.$route.name === 'work'
+        ? 'Work'
+        : 'Blog'
+    },
+  },
   async mounted() {
     const waves = await fetch(
       'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
@@ -64,7 +73,7 @@ export default {
   },
   head() {
     return {
-      title: `Shane Earley | ${this.$route.name === 'index' ? 'Home' : 'Work'}`,
+      title: `Shane Earley | ${this.title}`,
       meta: [
         {
           hid: 'description',
@@ -228,5 +237,8 @@ p a img {
 }
 .padded-article {
   padding: 1rem !important;
+}
+.rounded-article {
+  border-radius: 4px;
 }
 </style>

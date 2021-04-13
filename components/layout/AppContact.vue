@@ -42,7 +42,12 @@
                     href="https://www.linkedin.com/in/shanejearley"
                     class="is-primary"
                   >
-                    <b-icon class="link-icon" pack="fab" icon="linkedin" />
+                    <b-icon
+                      class="link-icon"
+                      size="is-large"
+                      pack="fab"
+                      icon="linkedin"
+                    />
                   </a>
                   <a
                     target="_blank"
@@ -50,7 +55,12 @@
                     href="https://www.github.com/shanejearley"
                     class="is-primary"
                   >
-                    <b-icon class="link-icon" pack="fab" icon="github" />
+                    <b-icon
+                      class="link-icon"
+                      size="is-large"
+                      pack="fab"
+                      icon="github"
+                    />
                   </a>
                   <a
                     target="_blank"
@@ -58,7 +68,12 @@
                     href="https://twitter.com/ShaneJEarley"
                     class="is-primary"
                   >
-                    <b-icon class="link-icon" pack="fab" icon="twitter" />
+                    <b-icon
+                      class="link-icon"
+                      size="is-large"
+                      pack="fab"
+                      icon="twitter"
+                    />
                   </a>
                 </div>
               </div>

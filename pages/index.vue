@@ -8,12 +8,12 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content">
                   <p class="title is-1 has-text-white">
-                    Let's build waves of impact.
+                    Let's build waves of good tech.
                   </p>
                   <p class="subtitle has-text-white">
                     Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire who enjoys developing products with people who
-                    seek to make our lives better.
+                    Hampshire who enjoys developing things with people to make
+                    our lives better.
                   </p>
                 </div>
               </article>
@@ -57,9 +57,9 @@
                 <div class="content">
                   <p class="title has-text-white">How can I help?</p>
                   <p class="subtitle has-text-white">
-                    I build applications for the modern web using tools from IoT
-                    to analytics to design. I've been very lucky to work with
-                    some great teams along the way.
+                    I design, architect and program applications for the
+                    web-connected world. I've been very lucky to work with some
+                    great teams along the way.
                   </p>
                   <b-button
                     size="is-medium"

@@ -55,7 +55,7 @@
               <div class="tile">
                 <div class="tile">
                   <article
-                    class="tile has-text-left has-cultured-bg padded-article rounded-article"
+                    class="tile has-text-left has-cultured-bg padded-article rounded-article full-width-article"
                   >
                     <div class="content">
                       <p class="subtitle">
@@ -131,7 +131,7 @@ hr {
 }
 
 .work-container {
-  padding: 4rem 2rem;
+  padding: 4rem 0;
 }
 
 .work-image-article {

@@ -235,6 +235,10 @@ p a img {
   max-width: 5em;
   padding-left: 0.25em;
 }
+.full-width-article {
+  max-width: 600px;
+  margin: auto;
+}
 .padded-article {
   padding: 1rem !important;
 }

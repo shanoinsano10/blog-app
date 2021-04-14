@@ -65,7 +65,7 @@
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://twitter.com/ShaneJEarley"
+                    href="https://twitter.com/shanejearley"
                     class="is-primary"
                   >
                     <b-icon
@@ -73,6 +73,19 @@
                       size="is-large"
                       pack="fab"
                       icon="twitter"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://keybase.io/shanejearley"
+                    class="is-primary"
+                  >
+                    <b-icon
+                      class="link-icon"
+                      size="is-large"
+                      pack="fab"
+                      icon="keybase"
                     />
                   </a>
                 </div>

@@ -12,7 +12,7 @@
             >
               <img src="@/assets/logo-white.svg" alt="Wave logo icon" />
               <h4 class="title is-4 has-text-white has-margin-before">
-                Shane Earley
+                Shane J. Earley
               </h4>
             </b-navbar-item>
           </template>
@@ -73,12 +73,12 @@ export default {
   },
   head() {
     return {
-      title: `Shane Earley | ${this.title}`,
+      title: `Shane J. Earley | ${this.title}`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Portfolio site for Shane Earley Product Development',
+          content: 'Portfolio site for Shane J. Earley Product Development',
         },
       ],
     }
@@ -115,7 +115,7 @@ nav.navbar.is-fixed-top {
   display: inline-block;
 }
 .footer {
-  padding-bottom: 3rem;
+  padding: 3rem 1.5rem;
 }
 .footer-icon path {
   fill: #226699;

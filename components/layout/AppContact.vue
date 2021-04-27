@@ -6,20 +6,19 @@
           <div class="tile is-vertical is-2 is-hidden-mobile">
             <div class="tile">
               <div class="tile is-parent">
-                <article
-                  class="tile is-child notification is-cultured"
-                ></article>
+                <article class="tile is-child is-cultured"></article>
               </div>
             </div>
           </div>
 
           <div class="tile is-parent">
-            <article class="tile is-child notification is-cultured">
+            <article class="tile is-child is-cultured">
               <div class="content">
                 <p class="title has-text-sapphire-blue">Say hello.</p>
                 <p class="subtitle has-text-sapphire-blue">
                   I would love to hear about your project.
                 </p>
+
                 <div class="content">
                   <div
                     class="box is-shadowless has-text-centered has-cultured-bg"
@@ -35,6 +34,7 @@
                     </b-button>
                   </div>
                 </div>
+
                 <div class="content has-text-sapphire-blue">
                   <a
                     target="_blank"
@@ -88,6 +88,9 @@
                       icon="keybase"
                     />
                   </a>
+                  <figure class="image is-1by1 contact-image">
+                    <img src="@/assets/profile-pic.svg" />
+                  </figure>
                 </div>
               </div>
             </article>
@@ -96,9 +99,7 @@
           <div class="tile is-vertical is-2 is-hidden-mobile">
             <div class="tile">
               <div class="tile is-parent">
-                <article
-                  class="tile is-child notification is-cultured"
-                ></article>
+                <article class="tile is-child is-cultured"></article>
               </div>
             </div>
           </div>
@@ -125,4 +126,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.contact-image {
+  margin-top: 0 !important;
+  padding-top: 15rem !important;
+}
+</style>

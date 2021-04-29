@@ -12,7 +12,7 @@
             >
               <img src="@/assets/logo-white.svg" alt="Wave logo icon" />
               <h4 class="title is-4 has-text-white has-margin-before">
-                Shane J. Earley
+                Shane Earley
               </h4>
             </b-navbar-item>
           </template>
@@ -73,12 +73,12 @@ export default {
   },
   head() {
     return {
-      title: `Shane J. Earley | ${this.title}`,
+      title: `Shane Earley | ${this.title}`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Portfolio site for Shane J. Earley Product Development',
+          content: 'Portfolio site for Shane Earley Product Development',
         },
       ],
     }

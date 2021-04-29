@@ -34,7 +34,7 @@
     <div class="content has-text-centered">
       <p>♡ Built with love in New Hampshire.</p>
       <p>
-        © Copyright {{ year }} Shane J. Earley. All rights reserved. Various
+        © Copyright {{ year }} Shane Earley. All rights reserved. Various
         trademarks held by their respective owners.
       </p>
     </div>

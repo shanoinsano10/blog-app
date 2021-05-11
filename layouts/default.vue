@@ -26,13 +26,6 @@
             >
             <b-navbar-item
               tag="router-link"
-              :to="'/work'"
-              class="navbar-item"
-              exact-active-class="is-active"
-              >Work</b-navbar-item
-            >
-            <b-navbar-item
-              tag="router-link"
               :to="'/blog'"
               class="navbar-item"
               exact-active-class="is-active"
@@ -58,11 +51,7 @@ export default {
   },
   computed: {
     title() {
-      return this.$route.name === 'index'
-        ? 'Home'
-        : this.$route.name === 'work'
-        ? 'Work'
-        : 'Blog'
+      return this.$route.name === 'index' ? 'Home' : 'Blog'
     },
   },
   async mounted() {

@@ -8,12 +8,12 @@
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content">
                   <p class="title is-1 has-text-white">
-                    Let's build waves of good tech.
+                    Let's make waves of good tech.
                   </p>
                   <p class="subtitle has-text-white">
-                    Hi, I'm Shane. I'm a software engineer based in New
-                    Hampshire. I love the craft. I also enjoy thinking deeply
-                    about what we are creating for the future.
+                    Hi, I'm Shane. I'm a software engineer (from NH). I love the
+                    craft and I also enjoy thinking about what we are building
+                    for the future.
                   </p>
                 </div>
               </article>
@@ -61,17 +61,6 @@
                     and IoT. I've been very lucky to get exposed to a range of
                     exciting projects.
                   </p>
-                  <b-button
-                    size="is-medium"
-                    class="is-primary is-light"
-                    inverted
-                    outlined
-                    icon-right="arrow-circle-right"
-                    tag="router-link"
-                    to="/work"
-                  >
-                    Learn more
-                  </b-button>
                 </div>
               </article>
             </div>

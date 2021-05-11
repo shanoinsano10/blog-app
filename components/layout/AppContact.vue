@@ -19,22 +19,6 @@
                   I would love to hear about your project.
                 </p>
 
-                <div class="content">
-                  <div
-                    class="box is-shadowless has-text-centered has-cultured-bg"
-                  >
-                    <b-button
-                      size="is-medium"
-                      class="is-sapphire-blue"
-                      outlined
-                      icon-left="envelope"
-                      @click="cardModal()"
-                    >
-                      Send a message
-                    </b-button>
-                  </div>
-                </div>
-
                 <div class="content has-text-sapphire-blue">
                   <a
                     target="_blank"
@@ -108,23 +92,6 @@
     </section>
   </div>
 </template>
-
-<script>
-import ContactForm from '@/components/modals/ContactForm.vue'
-
-export default {
-  methods: {
-    cardModal() {
-      this.$buefy.modal.open({
-        parent: this,
-        component: ContactForm,
-        hasModalCard: true,
-        trapFocus: true,
-      })
-    },
-  },
-}
-</script>
 
 <style>
 .contact-image {

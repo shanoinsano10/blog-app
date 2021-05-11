@@ -7,7 +7,7 @@
             <div class="tile is-parent">
               <article class="tile is-child padded-article has-transparent-bg">
                 <div class="content has-text-centered">
-                  <p class="title is-1 has-text-white">Some recent thoughts.</p>
+                  <p class="title is-1 has-text-white">Some content.</p>
                 </div>
               </article>
             </div>
@@ -24,18 +24,18 @@
     >
       <path d="M0 100 C40 0 60 0 100 100 Z" />
     </svg>
-    <div class="has-sapphire-blue-bg work-wrapper">
-      <div class="has-white-bg work-card">
+    <div class="has-sapphire-blue-bg blog-wrapper">
+      <div class="has-white-bg blog-card">
         <div>
           <section class="section">
-            <div class="container work-container">
+            <div class="container blog-container">
               <div class="tile">
                 <div class="tile">
                   <article
                     class="tile has-text-left has-cultured-bg padded-article rounded-article full-width-article"
                   >
                     <div class="content">
-                      <p class="subtitle">Coming soon...</p>
+                      <p class="subtitle">Working on it...</p>
                     </div>
                   </article>
                 </div>
@@ -60,15 +60,13 @@
 </template>
 
 <script>
-import WorkDataMixin from '@/mixins/WorkDataMixin'
 import AppContact from '@/components/layout/AppContact.vue'
 
 export default {
-  name: 'WorkPage',
+  name: 'BlogPage',
   components: {
     AppContact,
   },
-  mixins: [WorkDataMixin],
   data() {
     return {
       activeTab: 0,
@@ -86,31 +84,31 @@ hr {
   margin: auto;
 }
 
-.work-wrapper {
+.blog-wrapper {
   padding: 1rem;
 }
 
-.work-card {
+.blog-card {
   border-radius: 4px;
   max-width: 800px;
   margin: auto;
 }
 
-.work-container {
+.blog-container {
   padding: 4rem 0;
 }
 
-.work-image-article {
+.blog-image-article {
   padding: 0 2rem 2rem 2rem;
 }
 
-.work-image {
+.blog-image {
   max-width: 256px;
   width: 100%;
   margin: auto;
 }
 
-.work-image img {
+.blog-image img {
   height: 100%;
   width: 100%;
 }

@@ -15,23 +15,7 @@
                 Shane Earley
               </h4>
             </b-navbar-item>
-          </template>
-          <template slot="end">
-            <b-navbar-item
-              tag="router-link"
-              :to="'/'"
-              class="navbar-item"
-              exact-active-class="is-active"
-              >Home</b-navbar-item
-            >
-            <b-navbar-item
-              tag="router-link"
-              :to="'/blog'"
-              class="navbar-item"
-              exact-active-class="is-active"
-              >Blog</b-navbar-item
-            >
-          </template>
+          </template> -->
         </b-navbar>
       </div>
     </div>
@@ -46,14 +30,6 @@
 
 <script>
 export default {
-  data() {
-    return {}
-  },
-  computed: {
-    title() {
-      return this.$route.name === 'index' ? 'Home' : 'Blog'
-    },
-  },
   async mounted() {
     const waves = await fetch(
       'https://services.surfline.com/kbyg/spots/reports?spotId=5842041f4e65fad6a77089e9'
@@ -62,7 +38,7 @@ export default {
   },
   head() {
     return {
-      title: `Shane Earley | ${this.title}`,
+      title: `Shane Earley Dev`,
       meta: [
         {
           hid: 'description',
